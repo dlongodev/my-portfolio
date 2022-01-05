@@ -293,6 +293,17 @@ body {
           box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
+.hover-info-text {
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #edeee1;
+  padding: 1rem;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .cursor {
   position: absolute;
   width: 48px;
