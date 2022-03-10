@@ -1,0 +1,21 @@
+@use './base/colors.scss' as *;
+@use './base/typography.scss' as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+//   cursor: crosshair;
+}
+body {
+    background-color: var(--surface1);
+}
+.container {
+    width: min(100% - 2rem, 60rem);
+    margin-inline: auto;
+    z-index: 1;
+}
+

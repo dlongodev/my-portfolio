@@ -1,0 +1,1 @@
+{"version":3,"sources":["fonts.css"],"names":[],"mappings":";IACI;IACA,sBAAsB;IACtB,kBAAkB;IAClB,mBAAmB;IACnB,iEAAkD;IAClD","file":"fonts.441523d7.css","sourceRoot":"../src","sourcesContent":["\n    @font-face {\n    font-family: 'Meiland';\n    font-style: normal;\n    font-weight: normal;\n    src: url('./Meiland-Gorgeous.woff') format('woff');\n    }"]}

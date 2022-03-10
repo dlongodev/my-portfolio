@@ -21,7 +21,7 @@ $pattern-dark: url("https://storage.googleapis.com/subtlepatterns-production/des
 $pattern-light: url("https://storage.googleapis.com/subtlepatterns-production/designers/subtlepatterns/uploads/white_carbon.png");
 
 body {
-  background: repeat $pattern-light;
+  // background: repeat $pattern-light;
   overflow: hidden;
   scroll-behavior: smooth;
   color: $black;
