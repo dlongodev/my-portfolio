@@ -11,8 +11,7 @@
 }
 
 .container {
-  width: min(100% - 2rem, 60rem);
-  margin-inline: auto;
+  width: 100%;
   z-index: 2;
 }
 
@@ -23,5 +22,4 @@
 .wrapper-dark{
   background-color: var(--brand);
 }
-
 
