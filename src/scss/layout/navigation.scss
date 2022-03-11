@@ -1,0 +1,24 @@
+nav {
+    // display: flex;
+    height: var(--size-fluid-5) ;
+    box-shadow: var(--shadow-2);
+    width: 100%;
+    background: var(--surface1);
+    opacity: 0.8;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.mobile {
+    display: none;
+}

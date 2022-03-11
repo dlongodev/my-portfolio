@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DLongoDev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/open-props" />
     <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css" />
     <link rel="stylesheet" href="../dist/fonts/fonts.css">
@@ -13,21 +18,52 @@
 
 <body>
     <div class="noise">
-        <header>
-            <form id="theme-switcher">
-                <div>
-                    <input type="radio" id="dark" name="theme" value="dark">
-                    <label for="dark">Dark</label>
+        <div class="wrapper-light">
+            <header class="container">
+                <nav class="nav">
+                    <p>DL</p>
+                    <ul class="mobile">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Skills</li>
+                        <li>Work</li>
+                        <li><button class="btn btn-primary">contact</button></li>
+                    </ul>
+        
+                </nav>
+                <div class="hero-section">
+                    <div class="name-section">
+                        <img class="hero-logo-img" src="./img/DL-logo-bg.svg" alt="">
+                        <h1>Daniele Longo</h1>
+                        <h3>Front-End Developer</h3>
+                    </div>
                 </div>
-                <div>
-                    <input type="radio" id="very-pery" name="theme" value="very-pery">
-                    <label for="very-pery">Very-Peri</label>
+                <div class="hero-btm">
+                    <form id="theme-switcher">
+                        <div>
+                            <input type="radio" id="dark" name="theme" value="dark">
+                            <label for="dark">Dark</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="very-pery" name="theme" value="very-pery">
+                            <label for="very-pery">Very-Peri</label>
+                        </div>
+                    </form>
+            </div>
+                </header>
+        </div>
+            <main class="container">
+            <section class="about">
+                <div class="photo"></div>
+                <div class="about-text">
+                    <h1>About</h1>
+                    <p>I am a motivated Fullstack / Front-End Developer passionate about problem-solving with creative solutions and
+                        a keen eye for visual aesthetics that follow good design principles. My 10+ years of experience as a graphic
+                        designer developing print, digital, and motion graphics materials allowed me to grow as a reliable and
+                        results-driven team player that delivers with a growth mindset and commitment to success.</p>
                 </div>
-            </form>
-        </header>
-        <main class="container">
-            <h1>Daniele Longo</h1>
-            <h2>Testing h2</h2>
+                <div class="btn-container"><button class="btn btn-secondary btn-light">Download My Resume</button></div>
+            </section>
         </main>
     </div>
 </body>

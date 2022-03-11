@@ -1,0 +1,32 @@
+$main-title:clamp(2.5rem, 6vw, 5rem);
+
+:root{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, .h1 {
+        font-family: 'Meiland';
+        color: var(--text1);
+        font-size: $main-title;
+        letter-spacing: 0.075em;
+    }
+
+h2, .h2 {
+        font-family: 'Meiland';
+        color: var(--brand);
+        font-size: var(--font-size-fluid-3);
+        letter-spacing: 0.075em;
+    }
+
+h3, .h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--text1);
+    font-size: var(--font-size-1);
+    letter-spacing: 0.075em;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--font-size-1);
+}

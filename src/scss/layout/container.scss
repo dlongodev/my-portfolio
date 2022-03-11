@@ -1,0 +1,27 @@
+@use 'abstracts/' as a;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+//   cursor: crosshair;
+}
+
+.container {
+  width: min(100% - 2rem, 60rem);
+  margin-inline: auto;
+  z-index: 2;
+}
+
+.wrapper-light{
+  background-color: var(--surface1);
+}
+
+.wrapper-dark{
+  background-color: var(--brand);
+}
+
+

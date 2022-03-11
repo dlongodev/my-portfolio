@@ -1,4 +1,7 @@
+
+
 html {
+
   /* dark */
   --brand-dark: var(--brand-300);
   --text1-dark: var(--gray-1);
@@ -9,6 +12,9 @@ html {
   --surface4-dark: var(--gray-6);
   --surface-shadow-dark: 200 50% 3%;
   --shadow-strength-dark: 80%;
+  --logo-opacity: 0.1;
+
+  
   /* peri */
   --brand-peri: var(--brand-main);
   --text1-peri: var(--brand-900);
@@ -19,17 +25,19 @@ html {
   --surface4-peri: var(--brand-400);
   --surface-shadow-peri: 239 30% 20%;
   --shadow-strength-peri: 2%;
+  --logo-opacity: 0.3;
 }
 
 :root {
-  --brand-main: hsl(239, 29%, 54%);
-  --brand-100: hsl(239, 26%, 93%);
-  --brand-200: hsl(239, 60%, 92%);
-  --brand-300: hsl(239, 39%, 83%);
-  --brand-400: hsl(239, 33%, 73%);
-  --brand-500: hsl(239, 31%, 63%);
-  --brand-900: hsl(239, 40%, 20%);
+--brand-main: hsl(239, 29%, 54%);
+--brand-100: hsl(239, 26%, 93%);
+--brand-200: hsl(239, 60%, 92%);
+--brand-300: hsl(239, 39%, 83%);
+--brand-400: hsl(239, 33%, 73%);
+--brand-500: hsl(239, 31%, 63%);
+--brand-900: hsl(239, 40%, 20%);
   color-scheme: light;
+
   /* set defaults */
   --brand: var(--brand-peri);
   --text1: var(--text1-peri);
@@ -40,11 +48,13 @@ html {
   --surface4: var(--surface4-peri);
   --surface-shadow: var(--surface-shadow-peri);
   --shadow-strength: var(--shadow-strength-peri);
+  --logo-opacity: 0.3;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
+
     --brand: var(--brand-dark);
     --text1: var(--text1-dark);
     --text2: var(--text2-dark);
@@ -54,10 +64,14 @@ html {
     --surface4: var(--surface4-dark);
     --surface-shadow: var(--surface-shadow-dark);
     --shadow-strength: var(--shadow-strength-dark);
+    --logo-opacity: 0.1;
   }
 }
-[color-scheme=dark] {
+
+
+[color-scheme="dark"] {
   color-scheme: dark;
+  
   --brand: var(--brand-dark);
   --text1: var(--text1-dark);
   --text2: var(--text2-dark);
@@ -67,10 +81,13 @@ html {
   --surface4: var(--surface4-dark);
   --surface-shadow: var(--surface-shadow-dark);
   --shadow-strength: var(--shadow-strength-dark);
+  --logo-opacity: 0.1;
 }
 
-[color-scheme=very-pery] {
+
+[color-scheme="very-pery"] {
   color-scheme: light;
+
   --brand: var(--brand-peri);
   --text1: var(--text1-peri);
   --text2: var(--text2-peri);
@@ -80,39 +97,7 @@ html {
   --surface4: var(--surface4-peri);
   --surface-shadow: var(--surface-shadow-peri);
   --shadow-strength: var(--shadow-strength-peri);
+  --logo-opacity: 0.3;
 }
 
-h1 {
-  font-family: "Meiland";
-  color: var(--text1);
-  font-size: clamp(3rem, 6vw, 5rem);
-  letter-spacing: var(--font-letterspacing-2);
-}
 
-h2 {
-  font-family: "Meiland";
-  color: var(--brand);
-  font-size: var(--font-size-fluid-3);
-  letter-spacing: var(--font-letterspacing-2);
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-body {
-  background-color: var(--surface1);
-}
-
-.container {
-  width: min(100% - 2rem, 60rem);
-  margin-inline: auto;
-  z-index: 1;
-}
-
-/*# sourceMappingURL=/main.77bb5cfd.css.map */
