@@ -30,3 +30,10 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-size: var(--font-size-1);
 }
+
+a, a:active {
+    color: var(--text1);
+}
+a:hover {
+    color: var(--text2);
+}

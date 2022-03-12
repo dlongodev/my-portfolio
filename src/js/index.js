@@ -7,3 +7,10 @@ switcher.addEventListener('input', e =>
 
 const setTheme = theme =>
     doc.setAttribute('color-scheme', theme)
+
+
+// hamburger menu
+
+const hamburgerBtn = document.querySelector('#hamBtn')
+const toggleMenu = document.querySelector('#menuToggle')
+hamburgerBtn.addEventListener('click', (e) => toggleMenu.classList.toggle('menu-active'))

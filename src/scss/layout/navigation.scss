@@ -3,41 +3,44 @@ nav {
     box-shadow: var(--shadow-2);
     width: 100%;
     background: var(--surface1);
-    opacity: 0.8;
+    opacity: 0.95;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
     margin: 0;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+}
+
+li {
+    color: var(--text1);
+    margin: 1rem 0; 
+}
+li:hover {
+    color: var(--text2);
+    text-decoration: underline;
+}
 }
 
 .logo-wrapper {
     padding: 0.5em;
 
     svg{
+        position: relative;
         height: 100%;
     }
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.mobile {
-    display: none;
-}
-
 .nav-logo-path{
     fill: var(--brand)
-}
-.ham-wrapper{
-    size: 1rem;
 }
 
 //hamburger curtesy of Mikael Ainalem https://codepen.io/ainalem/pen/LJYRxz
@@ -50,6 +53,10 @@ nav ul {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
 }
 .hamRotate.active {
   transform: rotate(45deg);
@@ -77,4 +84,26 @@ nav ul {
   stroke-dashoffset: -138px;
 }
 
-// hamburber menu functionality
+// menu responsive functionality
+
+.menu-container {
+    position: absolute;
+    top: 0;
+    right:0;
+    padding: var(--size-10);
+    background-color: var(--surface2);
+    height: 100vh;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.menu-active {
+    right: -1000;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
