@@ -32,3 +32,43 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.hero-bottom {
+    width: 100%;
+    padding: var(--size-3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-right {
+    display: flex;
+    align-items: center;
+
+    .social {
+        padding: 0 1rem;
+
+        div {
+            display: inline-block;
+            height: 2rem;
+            width: 2rem;
+            background-color: var(--brand);
+            border-radius: var(--radius-round);
+        }
+        i {
+            padding: 0.5rem;
+            color: var(--text4);
+        }
+    }
+}
+.bottom-left {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--brand);
+    border-radius: var(--radius-round);
+
+    i {
+        color: var(--text4);
+        padding: 1rem;
+    }
+}

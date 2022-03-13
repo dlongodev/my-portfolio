@@ -1,0 +1,21 @@
+@mixin btn() {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    padding: 0.5em 3em;
+    border-radius: var(--radius-round);
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+.btn-primary {
+    @include btn();
+    background-color: var(--brand);
+    color: var(--text4);
+
+    &:hover {
+        color: var(--text4);
+        background-color: var(--text3);
+    }
+}

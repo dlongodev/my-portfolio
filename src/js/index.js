@@ -1,9 +1,15 @@
 // switch theme
-const switcher = document.querySelector('#theme-switcher')
+// const switcher = document.querySelector('#theme-switcher')
+const switchBtn = document.querySelector('#switch')
+let dark = "dark"
+let light = "vey-peri"
 const doc = document.firstElementChild
 
-switcher.addEventListener('input', e =>
-    setTheme(e.target.value))
+switchBtn.addEventListener('change', () =>
+    switchBtn.checked
+        ? setTheme(dark)
+        : setTheme(light)
+)
 
 const setTheme = theme =>
     doc.setAttribute('color-scheme', theme)
@@ -13,4 +19,4 @@ const setTheme = theme =>
 
 const hamburgerBtn = document.querySelector('#hamBtn')
 const toggleMenu = document.querySelector('#menuToggle')
-hamburgerBtn.addEventListener('click', (e) => toggleMenu.classList.toggle('menu-active'))
+hamburgerBtn.addEventListener('click', () => toggleMenu.classList.toggle('menu-active'))

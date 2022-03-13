@@ -3,7 +3,6 @@ nav {
     box-shadow: var(--shadow-2);
     width: 100%;
     background: var(--surface1);
-    opacity: 0.95;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -17,16 +16,28 @@ ul {
   padding: 0;
   display: flex;
   flex-direction: column;
-
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-1);
+  font-weight: 700;
 }
 
 li {
     color: var(--text1);
-    margin: 1rem 0; 
+    margin: 1rem; 
 }
 li:hover {
     color: var(--text2);
-    text-decoration: underline;
+}
+
+
+@media screen and (min-width: 768px) {
+    ul {
+        flex-direction: row;
+    }
+    li {
+        margin: 0 1.5rem 0 0;
+    }
 }
 }
 
@@ -84,8 +95,8 @@ li:hover {
   stroke-dashoffset: -138px;
 }
 
-// menu responsive functionality
 
+// menu responsive functionality-----------------
 .menu-container {
     position: absolute;
     top: 0;
@@ -98,6 +109,7 @@ li:hover {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    z-index: 98;
 }
 .menu-active {
     right: -1000;
@@ -106,4 +118,17 @@ li:hover {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+    #hamBtn {
+        display: none;
+    }
+    .menu-active {
+        right: 0;
+        top: 1rem;
+        height:fit-content;
+        padding: 0;
+        background-color: inherit;
+    }
 }
