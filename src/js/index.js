@@ -20,3 +20,4 @@ const setTheme = theme =>
 const hamburgerBtn = document.querySelector('#hamBtn')
 const toggleMenu = document.querySelector('#menuToggle')
 hamburgerBtn.addEventListener('click', () => toggleMenu.classList.toggle('menu-active'))
+

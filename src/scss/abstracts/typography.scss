@@ -1,4 +1,6 @@
 $main-title:clamp(2.5rem, 6vw, 5rem);
+$sub-title:clamp(0.9rem, 2vw, 1.5rem);
+
 
 :root{
     font-family: 'Montserrat', sans-serif;
@@ -22,13 +24,23 @@ h3, .h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: var(--text1);
-    font-size: var(--font-size-1);
+    font-size: $sub-title;
     letter-spacing: 0.075em;
+}
+
+h4, .h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--text1);
+    font-size: var(--font-size-fluid-0);
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
-    font-size: var(--font-size-1);
+    font-size: var(--font-size-fluid-0);
+    max-inline-size: unset;
 }
 
 a, a:active {

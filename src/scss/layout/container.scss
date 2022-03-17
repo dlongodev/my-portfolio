@@ -17,9 +17,14 @@
 
 .wrapper-light{
   background-color: var(--surface1);
+  width: 100%;
 }
 
 .wrapper-dark{
   background-color: var(--brand);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 

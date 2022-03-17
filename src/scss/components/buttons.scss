@@ -1,21 +1,50 @@
 @mixin btn() {
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-block;
-    border: 0;
-    padding: 0.5em 3em;
-    border-radius: var(--radius-round);
-    font-weight: 700;
-    font-size: 0.75rem;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.5em 3em;
+  border-radius: var(--radius-round);
+  font-weight: 700;
+  font-size: 0.75rem;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .btn-primary {
-    @include btn();
-    background-color: var(--brand);
-    color: var(--text4);
+  @include btn();
+  background-color: var(--brand);
+  color: var(--text4);
+  border: var(--border-size-2) solid var(--brand);
 
-    &:hover {
-        color: var(--text4);
-        background-color: var(--text3);
-    }
+  &:hover {
+    color: var(--text4);
+    background-color: var(--text3);
+  }
+}
+
+.btn-outlined-light {
+  @include btn();
+  background-color: transparent;
+  color: var(--surface1);
+  border: var(--border-size-2) solid var(--surface1);
+
+  &:hover {
+    background-color: var(--text3);
+  }
+
+}
+
+ .btn-outlined-dark {
+  @include btn();
+  background-color: transparent;
+  color: var(--brand);
+  border: var(--border-size-2) solid var(--brand);
+
+  &:hover {
+    background-color: var(--surface2);
+  }
 }
