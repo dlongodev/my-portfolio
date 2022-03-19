@@ -1,5 +1,6 @@
-$paragraph-xs: clamp(.625rem,1.8vw,0.875rem);
+$paragraph-xs: clamp(.675rem,1.5vw,0.875rem);
 $h2-title: clamp(1.5rem,4.5vw,3.5rem);
+
 
 .work-container {
   width: 100%;
@@ -16,9 +17,8 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
   height: min(8rem, 6.5rem);
   overflow: hidden;
 
-  h2,
+  h2, h4,
   span {
-    font-size: 3rem;
     color: var(--text4);
     margin: 0 var(--size-3);
   }
@@ -26,6 +26,9 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
     opacity: 0.4;
   }
 }
+.next {
+    height: min(5rem, 3.5rem);
+  }
 
 .project {
   max-width: 90rem;
@@ -33,13 +36,41 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
-  @media screen and (min-width: 800px) {
+
+    .right {
+      order: 1
+  };
+  @media screen and (min-width: 750px) {
       padding: 0 1rem;
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: repeat(6, 1fr);
       align-items: flex-end;
+      gap: 1rem;
+
+       .right{
+          grid-column: span 3;
+          order: 0;
+      }
+      .left{
+          grid-column: span 3;
+      }
+   }
+  @media screen and (min-width: 1000px) {
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      align-items: flex-end;
+      gap: 3rem;    
+
+      .right{
+          grid-column: span 4;
+          order: 0;
+      }
+      .left{
+          grid-column: span 2;
+      }
   }
+   
 }
 
 .project-img {
@@ -47,6 +78,7 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
     overflow: hidden;
     width: 100%;
     background-color: var(--surface2);
+    
     
   img {
     width: 100%;
@@ -58,23 +90,49 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
   .img-2 {
     position: absolute;
     top: 0;
-    right: -90px;
+    right: -20px;
   }
   .img-3 {
     position: absolute;
     top: 0;
-    right: 90px;
+    right: 20px;
+  }
+  .img-4 {
+    position: relative;
+    z-index: 3;
+  }
+  .img-5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+  }
+  .img-6 {
+    position: relative;
+    z-index: 3;
+  }
+  .img-7 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    &:hover{
+        opacity: 1;
+    }
   }
 }
 
 .project-description {
-    width: 85%;
+    // width: 85%;
     margin-top: 2rem;
     margin-bottom: 2rem;
     line-height: var(--font-lineheight-4);
-    
-    @media screen and (min-width: 800px) {
-        margin-left: 3rem;
+    padding: 0 1.5rem;
+
+    @media screen and (min-width: 750px) {
+    padding: 0 1rem;
         h2 {
             font-size: $h2-title;
         }
@@ -88,9 +146,12 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
   span {
       display: block;
       margin: 1rem 0;
-      font-size: var(--font-size-0);
+      font-size: $paragraph-xs;
       color: var(--brand);
       text-transform: uppercase;
       font-weight: 700;
+      letter-spacing: 0.075em;
   }
 }
+
+
