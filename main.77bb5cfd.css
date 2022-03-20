@@ -193,6 +193,22 @@ body {
   overflow-x: hidden;
 }
 
+.site-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .container {
   max-width: 1320px;
   z-index: 2;
@@ -424,8 +440,8 @@ nav li:hover {
 }
 
 .menu-active {
-  transform: translateX(105%);
   visibility: hidden;
+  transform: translateX(105%);
   -webkit-transition: transform 0.5s;
   -moz-transition: transform 0.5s;
   -ms-transition: transform 0.5s;
@@ -439,8 +455,8 @@ nav li:hover {
   }
 
   .menu-active {
-    transform: translateX(0);
     visibility: visible;
+    transform: translateX(0);
     right: 0;
     top: 0.5rem;
     height: fit-content;
