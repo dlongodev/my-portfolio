@@ -106,10 +106,11 @@ Project Link: [https://github.com/dlongodev/my-portfolio](https://github.com/dlo
 * [Grammerhub](http://grammerhub.org/)
 * [General Assembly](https://generalassemb.ly/)
 * [Twitter Dev Community](https://twitter.com/hashtag/DEVCommunity)
+* [syifa5610 @ Freepik for Press Your Tester Mockup](https://www.freepik.com/psd/mockup)
+* [designwarrior @ Freepik for StackDevHelp Mockup](https://www.freepik.com/psd/mockup)
+* [threed.io for MySugrPet Mockup](https://threed.io)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

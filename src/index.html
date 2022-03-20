@@ -45,14 +45,15 @@
         </svg>
     </div>
     <div>
-        <svg id="hamBtn" class="ham hamRotate ham1" viewBox="0 0 100 100" width="70"
-            onclick="this.classList.toggle('active')">
-            <path class="line top"
-                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-            <path class="line middle" d="m 30,50 h 40" />
-            <path class="line bottom"
-                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-        </svg>
+        <button id="hamBtn" aria-controls="menuToggle" class="mobile-nav"><span class="sr-only">Menu</span>
+            <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
+                <path class="line top"
+                    d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom"
+                    d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+            </svg>
+            </button>
         <div id="menuToggle" class="menu-container menu-active">
             <ul>
                 <a href="#">
@@ -93,9 +94,10 @@
                         <div></div>
                     </label>
                     <div class="social">
-                        <div><a href="https://github.com/dlongodev"><i class="fa-brands fa-github "></i></a></div>
-                        <div><a href="https://www.linkedin.com/in/danielealongo/"><i class="fa-brands fa-linkedin-in "></i></a></div>
-                        <div><a href="https://twitter.com/dlongodev"><i class="fa-brands fa-twitter"></i></a></div>
+                        <div><a href="https://github.com/dlongodev" aria-label="Github"><i class="fa-brands fa-github "></i></a></div>
+                        <div><a href="https://www.linkedin.com/in/danielealongo/" aria-label="Linkedin"><i
+                                    class="fa-brands fa-linkedin-in "></i></a></div>
+                        <div><a href="https://twitter.com/dlongodev" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></div>
                     </div>
                 </div>
                 </header>
@@ -218,9 +220,9 @@
         <div class="wrapper-light flex-column-center">
             <section class="work-container" role="contentinfo" aria-labelledby="work">
                 <div class="section-title wrapper-dark">
-                    <span class="h2" aria-disabled="true">Work</span>
+                    <span class="h2" aria-hidden="true">Work</span>
                     <h2><span id="work"></span>Work</h2>
-                    <span class="h2" aria-disabled="true">Work</span>
+                    <span class="h2" aria-hidden="true">Work</span>
                 </div>
             </section>
             <section class="project" role="contentinfo" aria-labelledby="project1">
@@ -264,25 +266,25 @@
 
             </section>
             <div class="section-title next wrapper-dark">
-                <span class="h4" aria-disabled="true">next</span>
-                <span class="h4" aria-disabled="true">next</span>
-                <span class="h4" aria-disabled="true">next</span>
-                <span class="h4" aria-disabled="true">next</span>
-                <span class="h4" aria-disabled="true">next</span>
-                <span class="h4" aria-disabled="true">next</span>
-                <span class="h4" aria-disabled="true">next</span>
-                <span class="h4" aria-disabled="true">next</span>
-                <span class="h4" aria-disabled="true">next</span>
+                <span class="h4" aria-hidden="true">next</span>
+                <span class="h4" aria-hidden="true">next</span>
+                <span class="h4" aria-hidden="true">next</span>
+                <span class="h4" aria-hidden="true">next</span>
+                <span class="h4" aria-hidden="true">next</span>
+                <span class="h4" aria-hidden="true">next</span>
+                <span class="h4" aria-hidden="true">next</span>
+                <span class="h4" aria-hidden="true">next</span>
+                <span class="h4" aria-hidden="true">next</span>
                 <h4>next</h4>
-                <span class="h4" aria-disabled="true">next</span>
-                <span class="h4" aria-disabled="true">next</span>
-                <span class="h4" aria-disabled="true">next</span>
-                <span class="h4" aria-disabled="true">next</span>
-                <span class="h4" aria-disabled="true">next</span>
-                <span class="h4" aria-disabled="true">next</span>
-                <span class="h4" aria-disabled="true">next</span>
-                <span class="h4" aria-disabled="true">next</span>
-                <span class="h4" aria-disabled="true">next</span>
+                <span class="h4" aria-hidden="true">next</span>
+                <span class="h4" aria-hidden="true">next</span>
+                <span class="h4" aria-hidden="true">next</span>
+                <span class="h4" aria-hidden="true">next</span>
+                <span class="h4" aria-hidden="true">next</span>
+                <span class="h4" aria-hidden="true">next</span>
+                <span class="h4" aria-hidden="true">next</span>
+                <span class="h4" aria-hidden="true">next</span>
+                <span class="h4" aria-hidden="true">next</span>
             </div>
             <section class="project" role="contentinfo" aria-labelledby="project2">
                 <div class="project-description right">
@@ -323,25 +325,25 @@
                     </div>
                     </section>
                     <div class="section-title next wrapper-dark">
-                        <span class="h4" aria-disabled="true">next</span>
-                        <span class="h4" aria-disabled="true">next</span>
-                        <span class="h4" aria-disabled="true">next</span>
-                        <span class="h4" aria-disabled="true">next</span>
-                        <span class="h4" aria-disabled="true">next</span>
-                        <span class="h4" aria-disabled="true">next</span>
-                        <span class="h4" aria-disabled="true">next</span>
-                        <span class="h4" aria-disabled="true">next</span>
-                        <span class="h4" aria-disabled="true">next</span>
-                        <span class="h4" aria-disabled="true">next</span>
+                        <span class="h4" aria-hidden="true">next</span>
+                        <span class="h4" aria-hidden="true">next</span>
+                        <span class="h4" aria-hidden="true">next</span>
+                        <span class="h4" aria-hidden="true">next</span>
+                        <span class="h4" aria-hidden="true">next</span>
+                        <span class="h4" aria-hidden="true">next</span>
+                        <span class="h4" aria-hidden="true">next</span>
+                        <span class="h4" aria-hidden="true">next</span>
+                        <span class="h4" aria-hidden="true">next</span>
+                        <span class="h4" aria-hidden="true">next</span>
                         <h4>next</h4>
-                        <span class="h4" aria-disabled="true">next</span>
-                        <span class="h4" aria-disabled="true">next</span>
-                        <span class="h4" aria-disabled="true">next</span>
-                        <span class="h4" aria-disabled="true">next</span>
-                        <span class="h4" aria-disabled="true">next</span>
-                        <span class="h4" aria-disabled="true">next</span>
-                        <span class="h4" aria-disabled="true">next</span>
-                        <span class="h4" aria-disabled="true">next</span>
+                        <span class="h4" aria-hidden="true">next</span>
+                        <span class="h4" aria-hidden="true">next</span>
+                        <span class="h4" aria-hidden="true">next</span>
+                        <span class="h4" aria-hidden="true">next</span>
+                        <span class="h4" aria-hidden="true">next</span>
+                        <span class="h4" aria-hidden="true">next</span>
+                        <span class="h4" aria-hidden="true">next</span>
+                        <span class="h4" aria-hidden="true">next</span>
                     </div>
                     <section class="project" role="contentinfo" aria-labelledby="project3">
                         <div class="project-img left">
@@ -383,19 +385,19 @@
     </main>
     <div class="wrapper-dark pt-3 flex-column-center">
         <div class="section-title next wrapper-dark">
-            <span class="h4" aria-disabled="true">contact</span>
-            <span class="h4" aria-disabled="true">contact</span>
-            <span class="h4" aria-disabled="true">contact</span>
-            <span class="h4" aria-disabled="true">contact</span>
-            <span class="h4" aria-disabled="true">contact</span>
+            <span class="h4" aria-hidden="true">contact</span>
+            <span class="h4" aria-hidden="true">contact</span>
+            <span class="h4" aria-hidden="true">contact</span>
+            <span class="h4" aria-hidden="true">contact</span>
+            <span class="h4" aria-hidden="true">contact</span>
             <h4><span id="contact"></span>contact</h4>
-            <span class="h4" aria-disabled="true">contact</span>
-            <span class="h4" aria-disabled="true">contact</span>
-            <span class="h4" aria-disabled="true">contact</span>
-            <span class="h4" aria-disabled="true">contact</span>
-            <span class="h4" aria-disabled="true">contact</span>
-            <span class="h4" aria-disabled="true">contact</span>
-            <span class="h4" aria-disabled="true">contact</span>
+            <span class="h4" aria-hidden="true">contact</span>
+            <span class="h4" aria-hidden="true">contact</span>
+            <span class="h4" aria-hidden="true">contact</span>
+            <span class="h4" aria-hidden="true">contact</span>
+            <span class="h4" aria-hidden="true">contact</span>
+            <span class="h4" aria-hidden="true">contact</span>
+            <span class="h4" aria-hidden="true">contact</span>
         </div>
         <footer class="pt-3">
             <h1>
@@ -411,9 +413,10 @@
             <div class="sub-footer">
                 <div class="social">
                     <h4>Let's Connect!</h4>
-                    <div><a href="https://github.com/dlongodev"><i class="fa-brands fa-github "></i></a></div>
-                    <div><a href="https://www.linkedin.com/in/danielealongo/"><i class="fa-brands fa-linkedin-in "></i></a></div>
-                    <div><a href="https://twitter.com/dlongodev"><i class="fa-brands fa-twitter"></i></a></div>
+                    <div><a href="https://github.com/dlongodev" aria-label="Github"><i class="fa-brands fa-github "></i></a></div>
+                    <div><a href="https://www.linkedin.com/in/danielealongo/" aria-label="LinkedIn"><i
+                                class="fa-brands fa-linkedin-in "></i></a></div>
+                    <div><a href="https://twitter.com/dlongodev" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></div>
                 </div>
             </div>
         </footer>
@@ -422,8 +425,5 @@
 </body>
 <script src="https://kit.fontawesome.com/b4a967aeb0.js" crossorigin="anonymous"></script>
 <script src="./js/index.js"></script>
-
-<!-- Press Your Tester Image attribute: <a href='https://www.freepik.com/psd/mockup'>Mockup psd created by syifa5610 - www.freepik.com</a> -->
-<!-- StackDevHelp Image attribute  <a href="https://www.freepik.com/psd/mockup">Mockup psd created by designwarrior - www.freepik.com</a> -->
 
 </html>

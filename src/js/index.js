@@ -19,5 +19,18 @@ const setTheme = theme =>
 
 const hamburgerBtn = document.querySelector('#hamBtn')
 const toggleMenu = document.querySelector('#menuToggle')
-hamburgerBtn.addEventListener('click', () => toggleMenu.classList.toggle('menu-active'))
+const ham = document.querySelector(".ham")
+hamburgerBtn.addEventListener('click', (e) => {
+    e.stopPropagation()
+    toggleMenu.classList.toggle('menu-active')
+})
 
+// click outside menu
+window.addEventListener('click', (e) => {
+    e.stopPropagation()
+    if (!toggleMenu.contains(e.target) && hamburgerBtn) {
+        console.log('clicked outside')
+        toggleMenu.classList.toggle('menu-active')
+        ham.classList.toggle('active')
+    }
+})

@@ -55,6 +55,14 @@ li:hover {
     fill: var(--brand)
 }
 
+
+#hamBtn{
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  z-index: 100;
+}
 //hamburger curtesy of Mikael Ainalem https://codepen.io/ainalem/pen/LJYRxz
 
 .ham {
@@ -106,20 +114,21 @@ li:hover {
     padding: var(--size-10);
     background-color: var(--surface2);
     height: 100vh;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
     z-index: 98;
 }
 .menu-active {
-    right: -1000;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+    transform: translateX(105%);
+    visibility: hidden;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
 }
 
 @media screen and (min-width: 768px) {
@@ -127,6 +136,7 @@ li:hover {
         display: none;
     }
     .menu-active {
+        transform: translateX(0);
         right: 0;
         top: 0.5rem;
         height:fit-content;
