@@ -1,62 +1,60 @@
 nav {
-    height: 7vh ;
-    box-shadow: var(--shadow-2);
-    width: 100%;
-    background: var(--surface1);
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    z-index: 100;
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  height: 7vh;
+  box-shadow: var(--shadow-2);
+  width: 100%;
+  background: var(--surface1);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: var(--font-size-1);
-  font-weight: 700;
-}
+  justify-content: space-between;
+  margin: 0;
+  z-index: 100;
 
-li {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-1);
+    font-weight: 700;
+  }
+
+  li {
     color: var(--text1);
-    margin: 1rem; 
-}
-li:hover {
+    margin: 1rem;
+  }
+  li:hover {
     color: var(--text2);
-}
+  }
 
-
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     ul {
-        flex-direction: row;
+      flex-direction: row;
     }
     li {
-        margin: 0 1.5rem 0 0;
+      margin: 0 1.5rem 0 0;
     }
-}
+  }
 }
 
 .logo-wrapper {
-    padding: 0.5em;
+  padding: 0.5em;
 
-    svg{
-        position: relative;
-        height: 90%;
-    }
+  svg {
+    position: relative;
+    height: 90%;
+  }
 }
 
-.nav-logo-path{
-    fill: var(--brand)
+.nav-logo-path {
+  fill: var(--brand);
 }
 
-
-#hamBtn{
+#hamBtn {
   position: relative;
   width: 3rem;
   height: 3rem;
@@ -86,11 +84,11 @@ li:hover {
   transform: rotate(180deg);
 }
 .line {
-  fill:none;
+  fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke:var(--brand);
-  stroke-width:5.5;
-  stroke-linecap:round;
+  stroke: var(--brand);
+  stroke-width: 5.5;
+  stroke-linecap: round;
 }
 .ham1 .top {
   stroke-dasharray: 40 139;
@@ -105,43 +103,42 @@ li:hover {
   stroke-dashoffset: -138px;
 }
 
-
 // menu responsive functionality-----------------
 .menu-container {
-    position: absolute;
-    top: 0;
-    right:0;
-    padding: var(--size-10);
-    background-color: var(--surface2);
-    height: 100vh;
-    -webkit-transition: transform 0.5s;
-    -moz-transition: transform 0.5s;
-    -ms-transition: transform 0.5s;
-    -o-transition: transform 0.5s;
-    transition: transform 0.5s;
-    z-index: 98;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: var(--size-10);
+  background-color: var(--surface2);
+  height: 100vh;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  z-index: 98;
 }
 .menu-active {
-    transform: translateX(105%);
-    visibility: hidden;
-    -webkit-transition: transform 0.5s;
-    -moz-transition: transform 0.5s;
-    -ms-transition: transform 0.5s;
-    -o-transition: transform 0.5s;
-    transition: transform 0.5s;
+  visibility: hidden;
+  transform: translateX(105%);
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
 }
 
 @media screen and (min-width: 768px) {
-    #hamBtn {
-        display: none;
-    }
-    .menu-active {
-        transform: translateX(0);
-        visibility: visible;
-        right: 0;
-        top: 0.5rem;
-        height:fit-content;
-        padding: 0;
-        background-color: inherit;
-    }
+  #hamBtn {
+    display: none;
+  }
+  .menu-active {
+    visibility: visible;
+    transform: translateX(0);
+    right: 0;
+    top: 0.5rem;
+    height: fit-content;
+    padding: 0;
+    background-color: inherit;
+  }
 }
