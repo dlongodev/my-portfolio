@@ -137,6 +137,7 @@ li:hover {
     }
     .menu-active {
         transform: translateX(0);
+        visibility: visible;
         right: 0;
         top: 0.5rem;
         height:fit-content;
