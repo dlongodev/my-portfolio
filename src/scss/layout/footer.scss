@@ -13,13 +13,12 @@ footer {
   h4 {
     opacity: 0.7;
     line-height: var(--font-lineheight-5);
-    padding: 2rem;
+    padding: 2rem 0 1rem 0;
   }
 
   .social {
-      display: block;
-
-    height: 20vh;
+    display: block;
+    height: max(10rem, 15vh);
     background-color: var(--text3);
     width: 100%;
     margin-top: 10vh;
@@ -29,7 +28,7 @@ footer {
         display: inline-block;
       height: 3rem;
       width: 3rem;
-      margin: 0 1rem;
+      margin: 0 0.5rem;
       background-color: var(--surface1);
       border-radius: var(--radius-round);
     }

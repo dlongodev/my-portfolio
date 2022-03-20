@@ -14,6 +14,7 @@ h1, .h1 {
     }
 
 h2, .h2 {
+        position:relative;
         font-family: 'Meiland Gorgeous', serif;
         color: var(--brand);
         font-size: var(--font-size-fluid-3);
@@ -29,6 +30,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: var(--text1);
@@ -36,7 +38,7 @@ h4, .h4 {
     letter-spacing: 0.075em;
     text-transform: uppercase;
     max-inline-size: unset;
-    
+
 }
 
 p {
@@ -50,4 +52,9 @@ a, a:active {
 }
 a:hover {
     color: var(--text2);
+}
+
+h2 span, h4 span {
+    position: absolute;
+    top: -7vh;
 }
