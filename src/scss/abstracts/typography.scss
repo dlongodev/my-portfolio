@@ -35,6 +35,8 @@ h4, .h4 {
     font-size: var(--font-size-fluid-0);
     letter-spacing: 0.075em;
     text-transform: uppercase;
+    max-inline-size: unset;
+    
 }
 
 p {

@@ -69,6 +69,7 @@ li:hover {
   top: 0;
   right: 0;
   z-index: 99;
+  height: 100%;
 }
 .hamRotate.active {
   transform: rotate(45deg);
@@ -127,7 +128,7 @@ li:hover {
     }
     .menu-active {
         right: 0;
-        top: 1rem;
+        top: 0.5rem;
         height:fit-content;
         padding: 0;
         background-color: inherit;

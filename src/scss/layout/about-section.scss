@@ -1,7 +1,7 @@
+@use "../abstracts/" as a;
+
 .about {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  @include a.flex(column, center, center);
   width: 100%;
   padding: var(--size-5);
   margin-top: var(--size-5);

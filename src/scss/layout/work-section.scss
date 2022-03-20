@@ -1,3 +1,4 @@
+@use 'abstracts/' as a;
 $paragraph-xs: clamp(.675rem,1.5vw,0.875rem);
 $h2-title: clamp(1.5rem,4.5vw,3.5rem);
 
@@ -5,15 +6,11 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
 .work-container {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include a.flex(column, center, center);
 }
 
 .section-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include a.flex(row, center, center);
   height: min(8rem, 6.5rem);
   overflow: hidden;
 
@@ -33,9 +30,7 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
 .project {
   max-width: 90rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include a.flex(column, center, center);
 
     .right {
       order: 1

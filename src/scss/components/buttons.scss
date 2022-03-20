@@ -48,3 +48,62 @@
     background-color: var(--surface2);
   }
 }
+
+
+// codepen by Ian Lunn:
+// https://codepen.io/IanLunn/pen/AxBReL?editors=1100
+
+@mixin hideTapHighlightColor() {
+	//Prevent highlight colour when element is tapped
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+@mixin hardwareAccel() {
+	//Improve performance on mobile/tablet devices
+	transform: translateZ(0);
+}
+
+
+.button {
+  margin: 3em 0;
+  padding: 1em 2em 1em 3em;
+  cursor: pointer;
+  background: var(--surface1);
+  text-decoration: none;
+  color: var(--brand);
+  border-radius: 2em;
+
+  i {
+    margin-left: 1em;
+  }
+}
+
+.outline-outward {
+	display: inline-block;
+	$outerBorderWidth: 4px;
+	$innerBorderWidth: 4px;
+
+	position: relative;
+
+	@include hideTapHighlightColor();
+	@include hardwareAccel();
+
+	&:before {
+		content: '';
+		position: absolute;
+		border: var(--surface1) solid $outerBorderWidth;
+    border-radius: 2.5em;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transition-duration: .3s;
+		transition-property: top right bottom left;
+	}
+
+	&:hover:before {
+		top: -($outerBorderWidth + $innerBorderWidth);
+		right: -($outerBorderWidth + $innerBorderWidth);
+		bottom: -($outerBorderWidth + $innerBorderWidth);
+		left: -($outerBorderWidth + $innerBorderWidth);
+	}
+}

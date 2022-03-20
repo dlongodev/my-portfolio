@@ -4,3 +4,10 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
+
+.flex-column-center {
+    @include flex(column, center, center);
+}
+.flex-row-center{
+    @include flex(row, center, center)
+}
