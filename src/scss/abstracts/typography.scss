@@ -1,0 +1,60 @@
+$main-title:clamp(2.5rem, 6vw, 5rem);
+$sub-title:clamp(0.9rem, 2vw, 1.5rem);
+
+
+:root{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, .h1 {
+        font-family: 'Meiland Gorgeous', serif;
+        color: var(--text1);
+        font-size: $main-title;
+        letter-spacing: 0.075em;
+    }
+
+h2, .h2 {
+        position:relative;
+        font-family: 'Meiland Gorgeous', serif;
+        color: var(--brand);
+        font-size: var(--font-size-fluid-3);
+        letter-spacing: 0.075em;
+    }
+
+h3, .h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--text1);
+    font-size: $sub-title;
+    letter-spacing: 0.075em;
+}
+
+h4, .h4 {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--text1);
+    font-size: var(--font-size-fluid-0);
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    max-inline-size: unset;
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--font-size-fluid-0);
+    max-inline-size: unset;
+}
+
+a, a:active {
+    color: var(--text1);
+}
+a:hover {
+    color: var(--text2);
+}
+
+h2 span, h4 span {
+    position: absolute;
+    top: -7vh;
+}
