@@ -2,7 +2,7 @@
 // const switcher = document.querySelector('#theme-switcher')
 const switchBtn = document.querySelector('#switch')
 let dark = "dark"
-let light = "vey-peri"
+let light = "very-peri"
 const doc = document.firstElementChild
 
 switchBtn.addEventListener('change', () =>

@@ -69,9 +69,9 @@
   margin: 3em 0;
   padding: 1em 2em 1em 3em;
   cursor: pointer;
-  background: var(--surface1);
+  background: var(--text5);
   text-decoration: none;
-  color: var(--brand);
+  color: var(--surface5);
   border-radius: 2em;
 
   i {
@@ -92,7 +92,7 @@
 	&:before {
 		content: '';
 		position: absolute;
-		border: var(--surface1) solid $outerBorderWidth;
+		border: var(--text5) solid $outerBorderWidth;
     border-radius: 2.5em;
 		top: 0;
 		right: 0;

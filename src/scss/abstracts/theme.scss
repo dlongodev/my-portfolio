@@ -17,17 +17,17 @@ html {
   --logo-opacity: 0.3;
   
   /* dark */
-  --brand-dark: var(--brand-400);
+  --brand-dark: var(--brand-300);
   --text1-dark: var(--gray-1);
   --text2-dark: var(--gray-3);
   --text3-dark: var(--gray-2);
   --text4-dark: var(--gray-9);
   --text5-dark: var(--gray-0);
   --surface1-dark: var(--gray-9);
-  --surface2-dark: var(--gray-8);
-  --surface3-dark: var(--gray-6);
+  --surface2-dark: var(--brand-900);
+  --surface3-dark: var(--gray-7);
   --surface4-dark: var(--gray-5);
-  --surface5-dark: var(--gray-7);
+  --surface5-dark: var(--brand-600);
   --surface-shadow-dark: 200 50% 3%;
   --shadow-strength-dark: 80%;
   --logo-opacity: 0.1;
