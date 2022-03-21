@@ -54,7 +54,7 @@ nav {
   fill: var(--brand);
 }
 
-#hamBtn {
+#menuBtn {
   position: relative;
   width: 3rem;
   height: 3rem;
@@ -105,10 +105,10 @@ nav {
 
 // menu responsive functionality-----------------
 .menu-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  padding: var(--size-10);
+  padding: var(--size-8);
   background-color: var(--surface2);
   height: 100vh;
   -webkit-transition: transform 0.5s;
@@ -129,7 +129,7 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-  #hamBtn {
+  #hamBtn, #menuBtn {
     display: none;
   }
   .menu-active {

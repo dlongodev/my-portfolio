@@ -6,20 +6,20 @@ footer {
   margin-top: 10vh;
   text-align: center;
 
+
   h1,
   h4 {
-    color: var(--text4);
+    color: var(--text5);
+    padding: 1rem;
   }
   h4 {
     opacity: 0.7;
     line-height: var(--font-lineheight-5);
-    padding: 2rem 0 1rem 0;
   }
 
   .social {
     display: block;
     height: max(10rem, 15vh);
-    background-color: var(--text3);
     width: 100%;
     margin-top: 10vh;
         border-top: 1px solid var(--surface1);

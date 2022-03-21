@@ -5,10 +5,11 @@ html {
   --text2-peri: var(--brand-main);
   --text3-peri: var(--brand-600);
   --text4-peri: var(--brand-100);
+  --text5-peri: var(--brand-100);
   --surface1-peri: var(--brand-100);
   --surface2-peri: var(--brand-200);
   --surface3-peri: var(--brand-300);
-  --surface4-peri: var(--brand-400);
+  --surface4-peri: var(--brand-500);
   --surface-shadow-peri: 239 30% 20%;
   --shadow-strength-peri: 2%;
   --logo-opacity: 0.3;
@@ -18,10 +19,12 @@ html {
   --text2-dark: var(--gray-3);
   --text3-dark: var(--gray-2);
   --text4-dark: var(--gray-9);
+  --text5-dark: var(--gray-0);
   --surface1-dark: var(--gray-9);
   --surface2-dark: var(--gray-8);
-  --surface3-dark: var(--gray-7);
-  --surface4-dark: var(--gray-6);
+  --surface3-dark: var(--gray-6);
+  --surface4-dark: var(--gray-5);
+  --surface5-dark: var(--gray-7);
   --surface-shadow-dark: 200 50% 3%;
   --shadow-strength-dark: 80%;
   --logo-opacity: 0.1;
@@ -43,10 +46,12 @@ html {
   --text2: var(--text2-peri);
   --text3: var(--text3-peri);
   --text4: var(--text4-peri);
+  --text5: var(--text5-peri);
   --surface1: var(--surface1-peri);
   --surface2: var(--surface2-peri);
   --surface3: var(--surface3-peri);
   --surface4: var(--surface4-peri);
+  --surface5: var(--brand-peri);
   --surface-shadow: var(--surface-shadow-peri);
   --shadow-strength: var(--shadow-strength-peri);
   --logo-opacity: 0.3;
@@ -59,10 +64,12 @@ html {
   --text2: var(--text2-dark);
   --text3: var(--text3-dark);
   --text4: var(--text4-dark);
+  --text5: var(--text5-dark);
   --surface1: var(--surface1-dark);
   --surface2: var(--surface2-dark);
   --surface3: var(--surface3-dark);
   --surface4: var(--surface4-dark);
+  --surface5: var(--surface5-dark);
   --surface-shadow: var(--surface-shadow-dark);
   --shadow-strength: var(--shadow-strength-dark);
   --logo-opacity: 0.1;
@@ -124,7 +131,7 @@ h2, .h2 {
   font-family: "Meiland Gorgeous", serif;
   color: var(--brand);
   font-size: var(--font-size-fluid-3);
-  letter-spacing: 0.075em;
+  letter-spacing: 1px;
 }
 
 h3, .h3 {
@@ -220,7 +227,7 @@ body {
 }
 
 .wrapper-dark {
-  background-color: var(--brand);
+  background-color: var(--surface5);
   width: 100%;
 }
 
@@ -369,7 +376,7 @@ nav li:hover {
   fill: var(--brand);
 }
 
-#hamBtn {
+#menuBtn {
   position: relative;
   width: 3rem;
   height: 3rem;
@@ -425,10 +432,10 @@ nav li:hover {
 }
 
 .menu-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  padding: var(--size-10);
+  padding: var(--size-8);
   background-color: var(--surface2);
   height: 100vh;
   -webkit-transition: transform 0.5s;
@@ -450,7 +457,7 @@ nav li:hover {
 }
 
 @media screen and (min-width: 768px) {
-  #hamBtn {
+  #hamBtn, #menuBtn {
     display: none;
   }
 
@@ -505,12 +512,12 @@ nav li:hover {
   width: 100%;
 }
 .about-text h2 {
-  color: var(--text4);
+  color: var(--text5);
   text-align: center;
   margin-bottom: var(--size-4);
 }
 .about-text p {
-  color: var(--text4);
+  color: var(--text5);
   margin: 0;
   width: 100%;
   font-size: var(--font-size-fluid-0);
@@ -606,7 +613,7 @@ nav li:hover {
 }
 .section-title h2, .section-title h4,
 .section-title span {
-  color: var(--text4);
+  color: var(--text5);
   margin: 0 var(--size-3);
 }
 .section-title span {
@@ -750,17 +757,16 @@ footer {
 }
 footer h1,
 footer h4 {
-  color: var(--text4);
+  color: var(--text5);
+  padding: 1rem;
 }
 footer h4 {
   opacity: 0.7;
   line-height: var(--font-lineheight-5);
-  padding: 2rem 0 1rem 0;
 }
 footer .social {
   display: block;
   height: max(10rem, 15vh);
-  background-color: var(--text3);
   width: 100%;
   margin-top: 10vh;
   border-top: 1px solid var(--surface1);
@@ -789,6 +795,7 @@ footer .social i {
   display: inline-block;
   border: 0;
   padding: 0.5em 3em;
+  margin-right: 0.5rem;
   border-radius: var(--radius-round);
   font-weight: 700;
   font-size: 0.75rem;
@@ -803,7 +810,7 @@ footer .social i {
 }
 .btn-primary:hover {
   color: var(--text4);
-  background-color: var(--text3);
+  background-color: var(--surface4);
 }
 
 .btn-outlined-light {
@@ -812,6 +819,7 @@ footer .social i {
   display: inline-block;
   border: 0;
   padding: 0.5em 3em;
+  margin-right: 0.5rem;
   border-radius: var(--radius-round);
   font-weight: 700;
   font-size: 0.75rem;
@@ -821,11 +829,11 @@ footer .social i {
   -o-transition: all 0.5s;
   transition: all 0.5s;
   background-color: transparent;
-  color: var(--surface1);
-  border: var(--border-size-2) solid var(--surface1);
+  color: var(--text5);
+  border: var(--border-size-2) solid var(--text5);
 }
 .btn-outlined-light:hover {
-  background-color: var(--text3);
+  background-color: var(--surface2);
 }
 
 .btn-outlined-dark {
@@ -834,6 +842,7 @@ footer .social i {
   display: inline-block;
   border: 0;
   padding: 0.5em 3em;
+  margin-right: 0.5rem;
   border-radius: var(--radius-round);
   font-weight: 700;
   font-size: 0.75rem;
@@ -847,7 +856,8 @@ footer .social i {
   border: var(--border-size-2) solid var(--brand);
 }
 .btn-outlined-dark:hover {
-  background-color: var(--surface2);
+  background-color: var(--brand);
+  color: var(--text4);
 }
 
 .button {
