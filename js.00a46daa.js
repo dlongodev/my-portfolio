@@ -122,7 +122,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 // const switcher = document.querySelector('#theme-switcher')
 var switchBtn = document.querySelector('#switch');
 var dark = "dark";
-var light = "vey-peri";
+var light = "very-peri";
 var doc = document.firstElementChild;
 switchBtn.addEventListener('change', function () {
   return switchBtn.checked ? setTheme(dark) : setTheme(light);
@@ -175,7 +175,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51907" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53762" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
