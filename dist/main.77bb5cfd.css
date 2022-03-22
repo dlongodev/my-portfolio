@@ -766,7 +766,7 @@ footer h4 {
 }
 footer .social {
   display: block;
-  height: max(10rem, 15vh);
+  height: max(9rem, 15vh);
   width: 100%;
   margin-top: 10vh;
   border-top: 1px solid var(--surface1);
@@ -787,6 +787,11 @@ footer .social i {
 
 .sub-footer {
   width: 100%;
+}
+.sub-footer p, .sub-footer a {
+  font-size: 0.6rem;
+  color: var(--text5);
+  margin-bottom: 10px;
 }
 
 .btn-primary {
