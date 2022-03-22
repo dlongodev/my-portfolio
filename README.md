@@ -126,4 +126,4 @@ Project Link: [https://github.com/dlongodev/my-portfolio](https://github.com/dlo
 [license-url]: https://github.com/dlongodev/my-portfolio/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/danielealongo
-[product-screenshot]: img/screenshot.png
+[product-screenshot]: ./src/img/my_portfolio.jpg
