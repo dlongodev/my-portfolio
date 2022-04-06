@@ -84,6 +84,7 @@
 * [Sass / SCSS](https://sass-lang.com/)
 * [Parcel](https://parceljs.org/languages/sass/)
 * [Open-Props](https://open-props.style/)
+* [GSAP](https://greensock.com/docs/v3/Plugins/ScrollTrigger) ~>_next update_
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
