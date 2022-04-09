@@ -93,7 +93,7 @@
 <!-- CONTACT -->
 ## Contact
 
-Daniele Longo - [@dlongodev](https://twitter.com/dlongodev) - dlongodev@gmail.com.com
+Daniele Longo - [@dlongodev](https://twitter.com/dlongodev) - dlongodev@gmail.com
 
 Project Link: [https://github.com/dlongodev/my-portfolio](https://github.com/dlongodev/my-portfolio)
 
