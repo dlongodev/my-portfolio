@@ -110,6 +110,7 @@ Project Link: [https://github.com/dlongodev/my-portfolio](https://github.com/dlo
 * [syifa5610 @ Freepik for Press Your Tester Mockup](https://www.freepik.com/psd/mockup)
 * [designwarrior @ Freepik for StackDevHelp Mockup](https://www.freepik.com/psd/mockup)
 * [threed.io for MySugrPet Mockup](https://threed.io)
+* [user17882893 @ Freepik for Family Meal Kitchen Mockup](https://www.freepik.com/psd/clay-mockup)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

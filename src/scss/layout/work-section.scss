@@ -91,7 +91,7 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
     position: absolute;
     top: 0;
     right: 20px;
-  }
+    }
   .img-4 {
     position: relative;
     z-index: 3;
@@ -115,6 +115,23 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
     transition: opacity 1s ease-in;
     &:hover{
         opacity: 1;
+    }
+  }
+  .img-8 {
+    position: relative;
+    z-index: 3;
+  }
+  
+  .img-9 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+  
+    &:hover {
+      opacity: 1;
     }
   }
 }
