@@ -716,6 +716,21 @@ nav li:hover {
 .project-img .img-7:hover {
   opacity: 1;
 }
+.project-img .img-8 {
+  position: relative;
+  z-index: 3;
+}
+.project-img .img-9 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+.project-img .img-9:hover {
+  opacity: 1;
+}
 
 .project-description {
   margin-top: 2rem;
