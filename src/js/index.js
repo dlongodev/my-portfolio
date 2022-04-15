@@ -31,3 +31,59 @@ document.onclick = (e) => {
         hamburgerBtn.classList.remove('active')
     }
 }
+
+
+// MARQUEE ANIMATION
+// thanks @Coding_Journey tutorial for marquee elements setup
+
+const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+const allMarqueeContent = document.querySelectorAll("ul.marquee-content");
+const marqueeContent = () => {
+    allMarqueeContent.forEach(marquee => {
+        console.log(marquee)
+        root.style.setProperty("--marquee-elements", marquee.children.length);
+        for (let i = 0; i < marqueeElementsDisplayed; i++) {
+            marquee.appendChild(marquee.children[i].cloneNode(true));
+        }
+        return marquee
+    })
+}
+
+marqueeContent()
+
+// GSAP scroll trigger marquee elements
+gsap.to("#scroll1", {
+    scrollTrigger: {
+        trigger: "#scroll1",
+        scrub: 0.5,
+        start: "top bottom",
+        end: "bottom top",
+        ease: "power2",
+    },
+    xPercent: -20,
+})
+
+gsap.to("#scroll2", {
+    scrollTrigger: {
+        trigger: "#scroll2",
+        scrub: 0.5,
+        start: "top bottom",
+        end: "bottom top",
+        ease: "power1",
+    },
+    xPercent: -30,
+})
+
+gsap.to("#scroll3", {
+    scrollTrigger: {
+        trigger: "#scroll3",
+        scrub: 0.5,
+        start: "top bottom",
+        end: "bottom top",
+        ease: "power2",
+        toggleActions: "restart",
+    },
+    xPercent: -20,
+})
+

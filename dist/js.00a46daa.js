@@ -146,7 +146,60 @@ document.onclick = function (e) {
     toggleMenu.classList.add('menu-active');
     hamburgerBtn.classList.remove('active');
   }
+}; // MARQUEE ANIMATION
+// thanks @Coding_Journey tutorial for marquee elements setup
+
+
+var root = document.documentElement;
+var marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+var allMarqueeContent = document.querySelectorAll("ul.marquee-content");
+
+var marqueeContent = function marqueeContent() {
+  allMarqueeContent.forEach(function (marquee) {
+    console.log(marquee);
+    root.style.setProperty("--marquee-elements", marquee.children.length);
+
+    for (var i = 0; i < marqueeElementsDisplayed; i++) {
+      marquee.appendChild(marquee.children[i].cloneNode(true));
+    }
+
+    return marquee;
+  });
 };
+
+marqueeContent(); // GSAP scroll trigger marquee elements
+
+gsap.to("#scroll1", {
+  scrollTrigger: {
+    trigger: "#scroll1",
+    scrub: 0.5,
+    start: "top bottom",
+    end: "bottom top",
+    ease: "power2"
+  },
+  xPercent: -20
+});
+gsap.to("#scroll2", {
+  scrollTrigger: {
+    trigger: "#scroll2",
+    scrub: 0.5,
+    start: "top bottom",
+    end: "bottom top",
+    ease: "power1"
+  },
+  xPercent: -30
+});
+gsap.to("#scroll3", {
+  scrollTrigger: {
+    trigger: "#scroll3",
+    scrub: 0.5,
+    start: "top bottom",
+    end: "bottom top",
+    ease: "power2",
+    toggleActions: "restart"
+  },
+  xPercent: -20
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -175,7 +228,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59246" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60046" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
