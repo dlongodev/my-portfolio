@@ -115,6 +115,10 @@ html {
   padding-top: var(--size-7);
 }
 
+*:focus {
+  outline-color: var(--brand);
+}
+
 :root {
   font-family: "Montserrat", sans-serif;
 }
@@ -169,7 +173,7 @@ a:hover {
 
 h2 span, h4 span {
   position: absolute;
-  top: -7vh;
+  top: -4rem;
 }
 
 .flex-column-center {
@@ -325,7 +329,7 @@ header {
 }
 
 nav {
-  height: 7vh;
+  height: 3.5rem;
   box-shadow: var(--shadow-2);
   width: 100%;
   background: var(--surface1);
@@ -360,7 +364,7 @@ nav li:hover {
     flex-direction: row;
   }
   nav li {
-    margin: 0 1.5rem 0 0;
+    margin: 0 1rem;
   }
 }
 
@@ -551,7 +555,7 @@ nav li:hover {
   color: var(--text1);
   margin-top: 2rem;
 }
-.skills-section h4 {
+.skills-section h3 {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
 }

@@ -141,3 +141,6 @@ $size-3: var(--size-7);
 .pt-3 {
   padding-top: $size-3
 }
+*:focus {
+  outline-color: var(--brand);
+}

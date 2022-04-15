@@ -1,5 +1,5 @@
 nav {
-  height: 7vh;
+  height: 3.5rem;
   box-shadow: var(--shadow-2);
   width: 100%;
   background: var(--surface1);
@@ -36,7 +36,7 @@ nav {
       flex-direction: row;
     }
     li {
-      margin: 0 1.5rem 0 0;
+      margin: 0 1rem;
     }
   }
 }

@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,7 +35,7 @@
 <body>
     <nav class="nav" role="navigation">
         <div class="logo-wrapper">
-            <a href="http://dlongo.dev">
+            <a href="http://dlongo.dev" aria-label="logo homepage link">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
                     <path class="nav-logo-path"
                         d="M124.94,244.71A120.14,120.14,0,1,1,245.08,124.57,120.27,120.27,0,0,1,124.94,244.71Zm0-230A109.86,109.86,0,1,0,234.8,124.57,110,110,0,0,0,124.94,14.71Z"
@@ -94,8 +94,8 @@
                                 class="fa-solid fa-arrow-down"></i></a></div>
                     <div class="bottom-right">
                         <form>
-                            <label class="switch" aria-label="dark mode toggle" role="switch">
-                                <input id="switch" type="checkbox">
+                            <label class="switch">
+                                <input role="switch" aria-label="dark mode toggle" id="switch" type="checkbox">
                                 <div></div>
                             </label>
                         </form>
@@ -118,12 +118,9 @@
                     </div>
                     <div class="about-text">
                         <h2><span id="about"></span>About</h2>
-                        <p>I am a motivated Fullstack / Front-End Developer passionate about problem-solving with
-                            creative solutions and a keen
-                            eye for visual aesthetics that follow good design principles. My 10+ years of experience as
-                            a graphic designer
-                            developing print, digital, and motion graphics materials allowed me to grow as a reliable
-                            and results-driven team
+                        <p>I am a motivated Fullstack / Front-End Developer passionate about problem-solving with creative solutions and a keen
+                            eye for visual aesthetics that follow good design principles. My 10+ years of experience as a graphic designer
+                            developing print, digital, and motion graphics materials allowed me to grow as a reliable and results-driven team
                             player that delivers with a growth mindset and commitment to success.
                         </p>
                         <div class="btn-container"><a href="./img/DanieleLongo-Resume_2022.pdf" class="btn-outlined-light mt-3"
@@ -136,7 +133,7 @@
                     <div class="wrapper-light">
                         <section class="skills-section" role="contentinfo" aria-labelledby="skills">
                             <h2><span id="skills"></span>Skills</h2>
-                            <h4>Fullstack Development</h4>
+                            <h3 class="h4">Fullstack Development</h3>
                             <div class="skills-icons">
                                 <div class="icon">
                                     <i class="devicon-html5-plain"></i>
@@ -233,10 +230,10 @@
                         <span class="h2" aria-hidden="true">Work</span>
                     </div>
                 </section>
-                                        <section class="project" role="contentinfo" aria-labelledby="project2">
+                                        <section class="project" role="contentinfo" aria-labelledby="project1">
                                             <div class="project-description right">
                                                 <h4>E-Commerce Website</h4>
-                                                <h2 id="project2">
+                                                <h2 id="project1">
                                                     Family Meal Kitchen
                                                 </h2>
                                                 <p>
@@ -293,7 +290,7 @@
                                             <span class="h4" aria-hidden="true">next</span>
                                             <span class="h4" aria-hidden="true">next</span>
                                         </div>
-                <section class="project" role="contentinfo" aria-labelledby="project1">
+                <section class="project" role="contentinfo" aria-labelledby="project2">
                     <div class="project-img left">
                         <img class="img-1" src="./img/work_sugrpet-1.png"
                             alt="phone mockup of the home page of My Sugar Pet web application">
@@ -302,7 +299,7 @@
                     </div>
                     <div class="project-description right">
                         <h4>Web Application</h4>
-                        <h2 id="project1">
+                        <h2 id="project2">
                             MySugrPet
                         </h2>
                         <p>
@@ -357,10 +354,10 @@
                             <span class="h4" aria-hidden="true">next</span>
                             <span class="h4" aria-hidden="true">next</span>
                         </div>
-                        <section class="project" role="contentinfo" aria-labelledby="project2">
+                        <section class="project" role="contentinfo" aria-labelledby="project3">
                             <div class="project-description right">
                                 <h4>Web Application</h4>
-                                <h2 id="project2">
+                                <h2 id="project3">
                                     StackDevHelp
                                 </h2>
                                 <p>
@@ -420,7 +417,7 @@
                             <span class="h4" aria-hidden="true">next</span>
                             <span class="h4" aria-hidden="true">next</span>
                         </div>
-                        <section class="project" role="contentinfo" aria-labelledby="project3">
+                        <section class="project" role="contentinfo" aria-labelledby="project4">
                             <div class="project-img left">
                                 <img class="img-6" src="./img/work_PressYourTester-1.png"
                                     alt="phone mockup of the home page of Press Your Tester Game">
@@ -428,7 +425,7 @@
                             </div>
                             <div class="project-description right">
                                 <h4>Web Game</h4>
-                                <h2 id="project3">
+                                <h2 id="project4">
                                     Press Your Tester
                                 </h2>
                                 <p>

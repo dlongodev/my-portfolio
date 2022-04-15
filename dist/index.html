@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +30,7 @@
 <body>
     <nav class="nav" role="navigation">
         <div class="logo-wrapper">
-            <a href="http://dlongo.dev">
+            <a href="http://dlongo.dev" aria-label="logo homepage link">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
                     <path class="nav-logo-path" d="M124.94,244.71A120.14,120.14,0,1,1,245.08,124.57,120.27,120.27,0,0,1,124.94,244.71Zm0-230A109.86,109.86,0,1,0,234.8,124.57,110,110,0,0,0,124.94,14.71Z" transform="translate(-4.81 -4.43)"></path>
                     <path class="nav-logo-path" d="M84,183.48c-.41,0-.82,0-1.23,0-6.47-.48-14-4.88-15.31-12.11-1.11-6.29,3.05-11.05,3.9-11.94a16.46,16.46,0,0,1,10.52-4.79,18.24,18.24,0,0,1,12,3.12c.93-7.41,2-15.86,2.88-23.36,2.28-18.66,2.51-20.41,2.65-21,2.21-9.81,12-19.92,24.53-19.92h.12c13.64.07,24.73,11,24.73,24.27S137.68,141.91,124,142h0a5.14,5.14,0,0,1,0-10.28c8,0,14.48-6.31,14.49-14s-6.64-14-14.5-14h-.07c-8.06,0-13.42,7.09-14.5,11.91-.13.78-1.27,10.12-2.48,20-1.18,9.66-2.56,20.89-3.64,29.45a43.12,43.12,0,0,0,6.45,4.43c13.85,7.38,31.5.95,34.89-.42,18.52-7.45,25.35-24.62,26.53-28,5.85-16.66,1.21-36.17-11.82-49.7a50.4,50.4,0,0,0-30.91-15.26C125.77,75.84,102,74,86.7,91.87a45.28,45.28,0,0,0-10.51,28.57,5.14,5.14,0,0,1-10.28-.15,55.59,55.59,0,0,1,13-35.09c18.69-21.92,47.42-19.64,50.63-19.31a60.75,60.75,0,0,1,37.27,18.36c15.69,16.3,21.23,39.94,14.11,60.23-1.44,4.1-9.75,25-32.39,34.13-5.82,2.34-26.14,9.24-43.56-.06a43.65,43.65,0,0,1-5.47-3.48,20,20,0,0,1-2.9,3.28A18.66,18.66,0,0,1,84,183.48Zm-.39-18.69-.66,0a6.63,6.63,0,0,0-4.14,1.65,4.45,4.45,0,0,0-1.23,3.09c.32,1.79,3.51,3.45,6,3.63a8.61,8.61,0,0,0,6.11-2.44,10.49,10.49,0,0,0,1.79-2.14C88.41,166.22,86.05,164.79,83.61,164.79Z" transform="translate(-4.81 -4.43)"></path>
@@ -81,8 +81,8 @@
                     <div class="bottom-left"><a href="#about" aria-label="arrow down to scroll to about"><i class="fa-solid fa-arrow-down"></i></a></div>
                     <div class="bottom-right">
                         <form>
-                            <label class="switch" aria-label="dark mode toggle" role="switch">
-                                <input id="switch" type="checkbox">
+                            <label class="switch">
+                                <input role="switch" aria-label="dark mode toggle" id="switch" type="checkbox">
                                 <div></div>
                             </label>
                         </form>
@@ -102,12 +102,9 @@
                     </div>
                     <div class="about-text">
                         <h2><span id="about"></span>About</h2>
-                        <p>I am a motivated Fullstack / Front-End Developer passionate about problem-solving with
-                            creative solutions and a keen
-                            eye for visual aesthetics that follow good design principles. My 10+ years of experience as
-                            a graphic designer
-                            developing print, digital, and motion graphics materials allowed me to grow as a reliable
-                            and results-driven team
+                        <p>I am a motivated Fullstack / Front-End Developer passionate about problem-solving with creative solutions and a keen
+                            eye for visual aesthetics that follow good design principles. My 10+ years of experience as a graphic designer
+                            developing print, digital, and motion graphics materials allowed me to grow as a reliable and results-driven team
                             player that delivers with a growth mindset and commitment to success.
                         </p>
                         <div class="btn-container"><a href="/img/DanieleLongo-Resume_2022.pdf" class="btn-outlined-light mt-3" target="_blank">Download My
@@ -119,7 +116,7 @@
                     <div class="wrapper-light">
                         <section class="skills-section" role="contentinfo" aria-labelledby="skills">
                             <h2><span id="skills"></span>Skills</h2>
-                            <h4>Fullstack Development</h4>
+                            <h3 class="h4">Fullstack Development</h3>
                             <div class="skills-icons">
                                 <div class="icon">
                                     <i class="devicon-html5-plain"></i>
@@ -216,10 +213,10 @@
                         <span class="h2" aria-hidden="true">Work</span>
                     </div>
                 </section>
-                                        <section class="project" role="contentinfo" aria-labelledby="project2">
+                                        <section class="project" role="contentinfo" aria-labelledby="project1">
                                             <div class="project-description right">
                                                 <h4>E-Commerce Website</h4>
-                                                <h2 id="project2">
+                                                <h2 id="project1">
                                                     Family Meal Kitchen
                                                 </h2>
                                                 <p>
@@ -272,7 +269,7 @@
                                             <span class="h4" aria-hidden="true">next</span>
                                             <span class="h4" aria-hidden="true">next</span>
                                         </div>
-                <section class="project" role="contentinfo" aria-labelledby="project1">
+                <section class="project" role="contentinfo" aria-labelledby="project2">
                     <div class="project-img left">
                         <img class="img-1" src="/work_sugrpet-1.5f39f4aa.png" alt="phone mockup of the home page of My Sugar Pet web application">
                         <img class="img-2" src="/work_sugrpet-2.0a5df920.png" alt="">
@@ -280,7 +277,7 @@
                     </div>
                     <div class="project-description right">
                         <h4>Web Application</h4>
-                        <h2 id="project1">
+                        <h2 id="project2">
                             MySugrPet
                         </h2>
                         <p>
@@ -333,10 +330,10 @@
                             <span class="h4" aria-hidden="true">next</span>
                             <span class="h4" aria-hidden="true">next</span>
                         </div>
-                        <section class="project" role="contentinfo" aria-labelledby="project2">
+                        <section class="project" role="contentinfo" aria-labelledby="project3">
                             <div class="project-description right">
                                 <h4>Web Application</h4>
-                                <h2 id="project2">
+                                <h2 id="project3">
                                     StackDevHelp
                                 </h2>
                                 <p>
@@ -394,14 +391,14 @@
                             <span class="h4" aria-hidden="true">next</span>
                             <span class="h4" aria-hidden="true">next</span>
                         </div>
-                        <section class="project" role="contentinfo" aria-labelledby="project3">
+                        <section class="project" role="contentinfo" aria-labelledby="project4">
                             <div class="project-img left">
                                 <img class="img-6" src="/work_PressYourTester-1.ccabfe6a.png" alt="phone mockup of the home page of Press Your Tester Game">
                                 <img class="img-7" src="/work_PressYourTester-2.c92bfbc9.gif" alt="">
                             </div>
                             <div class="project-description right">
                                 <h4>Web Game</h4>
-                                <h2 id="project3">
+                                <h2 id="project4">
                                     Press Your Tester
                                 </h2>
                                 <p>
