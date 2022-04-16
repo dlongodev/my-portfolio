@@ -57,18 +57,23 @@ html {
   --logo-opacity: 0.3;
   --marquee-width: 100vw;
   --marquee-height: 10vh;
-  --marquee-elements-displayed: 10;
+  --marquee-elements-displayed: 12;
   --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
   --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
 }
-@media (max-width: 900px) {
+@media screen and (max-width: 2000px) {
+  :root {
+    --marquee-elements-displayed: 8;
+  }
+}
+@media screen and (max-width: 950px) {
   :root {
     --marquee-elements-displayed: 6;
   }
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   :root {
-    --marquee-elements-displayed: 4;
+    --marquee-elements-displayed: 4 ;
   }
 }
 
@@ -539,7 +544,7 @@ nav li:hover {
   color: var(--text5);
   margin: 0;
   width: 100%;
-  font-size: var(--font-size-fluid-0);
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
   text-align: justify;
   line-height: var(--font-lineheight-4);
 }
@@ -601,9 +606,10 @@ nav li:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
+  transition: all 0.2s cubic-bezier(0.41, 0, 0.25, 1.01);
 }
 .icon:hover {
-  animation: var(--animation-scale-up);
+  transform: scale(1.3);
 }
 .icon span {
   margin-top: 0.5rem;
@@ -611,6 +617,10 @@ nav li:hover {
   font-weight: 700;
   font-size: 0.75rem;
   text-transform: uppercase;
+}
+
+.btn-group > a {
+  margin-top: 0.5rem;
 }
 
 .work-container {
@@ -637,9 +647,25 @@ nav li:hover {
   margin: 0 var(--size-3);
 }
 .section-title span {
-  opacity: 0.4;
+  animation: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.section-title .blink1 {
+  animation-duration: 2s;
+}
+.section-title .blink2 {
+  animation-duration: 3s;
 }
 
+@keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
 .next {
   height: 3.5rem;
 }
@@ -704,12 +730,12 @@ nav li:hover {
 .project-img .img-2 {
   position: absolute;
   top: 0;
-  right: -20px;
+  right: 20px;
 }
 .project-img .img-3 {
   position: absolute;
   top: 0;
-  right: 20px;
+  right: -20px;
 }
 .project-img .img-4 {
   position: relative;
@@ -718,7 +744,7 @@ nav li:hover {
 .project-img .img-5 {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 100px;
   z-index: 3;
 }
 .project-img .img-6 {
@@ -784,38 +810,11 @@ nav li:hover {
 .marquee {
   width: var(--marquee-width);
   height: var(--marquee-height);
-  background-color: var(--brand-main);
   color: var(--brand-400);
   overflow: hidden;
   position: relative;
 }
 
-.marquee:before,
-.marquee:after {
-  position: absolute;
-  top: 0;
-  width: 10rem;
-  height: 100%;
-  content: "";
-  z-index: 1;
-}
-
-.marquee:before {
-  left: 0;
-  background: linear-gradient(to right, var(--brand-main) 0%, transparent 100%);
-}
-
-.marquee:after {
-  right: 0;
-  background: linear-gradient(to left, var(--brand-main) 0%, transparent 100%);
-}
-
-@media (max-width: 900px) {
-  .marquee:before,
-.marquee:after {
-    width: 5rem;
-  }
-}
 .marquee-animation {
   animation: scrolling var(--marquee-animation-duration) linear infinite;
 }

@@ -169,6 +169,7 @@ var marqueeContent = function marqueeContent() {
 
 marqueeContent(); // GSAP scroll trigger marquee elements
 
+gsap.registerPlugin(ScrollTrigger);
 gsap.to("#scroll1", {
   scrollTrigger: {
     trigger: "#scroll1",
@@ -199,6 +200,34 @@ gsap.to("#scroll3", {
     toggleActions: "restart"
   },
   xPercent: -20
+}); // image animation
+
+gsap.to(".img-2", {
+  scrollTrigger: {
+    trigger: ".img-3",
+    start: "top bottom",
+    end: "top 20vh",
+    scrub: true
+  },
+  x: "50px"
+});
+gsap.to(".img-3", {
+  scrollTrigger: {
+    trigger: ".img-3",
+    start: "top bottom",
+    end: "top 20vh",
+    scrub: true
+  },
+  x: "-50px"
+});
+gsap.to(".img-5", {
+  scrollTrigger: {
+    trigger: ".img-5",
+    start: "top bottom",
+    end: "top 20vh",
+    scrub: true
+  },
+  x: "110px"
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -228,7 +257,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60046" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54898" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
