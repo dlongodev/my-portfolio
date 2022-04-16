@@ -2,7 +2,9 @@
 $paragraph-xs: clamp(.675rem,1.5vw,0.875rem);
 $h2-title: clamp(1.5rem,4.5vw,3.5rem);
 
-
+.btn-group>a {
+  margin-top: 0.5rem;
+}
 .work-container {
   width: 100%;
   display: flex;
@@ -21,8 +23,28 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
     margin: 0 var(--size-3);
   }
   span {
-    opacity: 0.4;
-  }
+    animation: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+    
+    .blink1 {
+      animation-duration: 2s;
+    }
+    
+    .blink2 {
+      animation-duration: 3s;
+    }
+    }
+    
+    @keyframes blink {
+      0% {
+        opacity: 0.1;
+      }
+    
+      100% {
+        opacity: 0.7;
+      }
 }
 .next {
     height: min(5rem, 3.5rem);
@@ -86,12 +108,12 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
   .img-2 {
     position: absolute;
     top: 0;
-    right: -20px;
+    right: 20px;
   }
   .img-3 {
     position: absolute;
     top: 0;
-    right: 20px;
+    right: -20px;
     }
   .img-4 {
     position: relative;
@@ -100,7 +122,7 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
   .img-5 {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 100px;
     z-index: 3;
   }
   .img-6 {
@@ -173,39 +195,39 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
 .marquee {
   width: var(--marquee-width);
   height: var(--marquee-height);
-  background-color: var(--brand-main);
+  // background-color: var(--brand-main);
   color: var(--brand-400);
   overflow: hidden;
   position: relative;
 }
 
-.marquee:before,
-.marquee:after {
-  position: absolute;
-  top: 0;
-  width: 10rem;
-  height: 100%;
-  content: "";
-  z-index: 1;
-}
+// .marquee:before,
+// .marquee:after {
+//   position: absolute;
+//   top: 0;
+//   width: 10rem;
+//   height: 100%;
+//   content: "";
+//   z-index: 1;
+// }
 
-.marquee:before {
-  left: 0;
-  background: linear-gradient(to right, var(--brand-main) 0%, transparent 100%);
-}
+// .marquee:before {
+//   left: 0;
+//   background: linear-gradient(to right, var(--brand-main) 0%, transparent 100%);
+// }
 
-.marquee:after {
-  right: 0;
-  background: linear-gradient(to left, var(--brand-main) 0%, transparent 100%);
-}
+// .marquee:after {
+//   right: 0;
+//   background: linear-gradient(to left, var(--brand-main) 0%, transparent 100%);
+// }
 
-@media (max-width: 900px) {
+// @media (max-width: 900px) {
 
-  .marquee:before,
-  .marquee:after {
-    width: 5rem;
-  }
-}
+//   .marquee:before,
+//   .marquee:after {
+//     width: 5rem;
+//   }
+// }
 
 .marquee-animation {
   animation: scrolling var(--marquee-animation-duration) linear infinite;

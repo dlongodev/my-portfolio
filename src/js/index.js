@@ -53,6 +53,8 @@ const marqueeContent = () => {
 marqueeContent()
 
 // GSAP scroll trigger marquee elements
+gsap.registerPlugin(ScrollTrigger)
+
 gsap.to("#scroll1", {
     scrollTrigger: {
         trigger: "#scroll1",
@@ -87,3 +89,33 @@ gsap.to("#scroll3", {
     xPercent: -20,
 })
 
+// image animation
+gsap.to(".img-2", {
+    scrollTrigger: {
+        trigger: ".img-3",
+        start: "top bottom",
+        end: "top 20vh",
+        scrub: true,
+    },
+    x: "50px",
+})
+
+gsap.to(".img-3", {
+    scrollTrigger: {
+        trigger: ".img-3",
+        start: "top bottom",
+        end: "top 20vh",
+        scrub: true,
+    },
+    x: "-50px",
+})
+
+gsap.to(".img-5", {
+    scrollTrigger: {
+        trigger: ".img-5",
+        start: "top bottom",
+        end: "top 20vh",
+        scrub: true,
+    },
+    x: "110px",
+})

@@ -44,7 +44,7 @@
         color: var(--text5);
         margin: 0;
         width: 100%;
-        font-size: var(--font-size-fluid-0);
+        font-size: clamp(1rem, 1.5vw, 1.1rem);
         text-align: justify;
         line-height: var(--font-lineheight-4);
     }

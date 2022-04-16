@@ -37,9 +37,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    transition: all 0.2s cubic-bezier(0.41, 0, 0.25, 1.01);
     
     &:hover{
-        animation: var(--animation-scale-up);
+        transform: scale(1.3);
     }
 
     span {
