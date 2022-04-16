@@ -730,12 +730,12 @@ nav li:hover {
 .project-img .img-2 {
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 150px;
 }
 .project-img .img-3 {
   position: absolute;
   top: 0;
-  right: -20px;
+  right: -150px;
 }
 .project-img .img-4 {
   position: relative;
