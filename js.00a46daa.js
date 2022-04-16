@@ -206,25 +206,25 @@ gsap.to(".img-2", {
   scrollTrigger: {
     trigger: ".img-3",
     start: "top bottom",
-    end: "top 20vh",
+    end: "top 20px",
     scrub: true
   },
-  x: "50px"
+  x: "200px"
 });
 gsap.to(".img-3", {
   scrollTrigger: {
     trigger: ".img-3",
     start: "top bottom",
-    end: "top 20vh",
+    end: "top 20px",
     scrub: true
   },
-  x: "-50px"
+  x: "-200px"
 });
 gsap.to(".img-5", {
   scrollTrigger: {
     trigger: ".img-5",
     start: "top bottom",
-    end: "top 20vh",
+    end: "top 10px",
     scrub: true
   },
   x: "110px"
@@ -257,7 +257,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54898" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57359" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
