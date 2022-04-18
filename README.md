@@ -35,7 +35,7 @@
 <h3 align="center">My Portfolio</h3>
 
   <p align="center">
-    Welcome to my portfolio. I am a Front-End Developer with 10+ years graphic design background.  have experience with HTML, CSS, JavaScript, and looking to grow as a Fullstack Web Developer building applications using MERN stack (MongoDB, Express.js, React.js, Node.js) 
+    Welcome to my portfolio. I am a Front-End Developer with 10+ years graphic design background. I have experience with HTML, CSS, JavaScript, React, NextJS, MongoDB, and looking to grow as a Fullstack Web Developer building applications and online experiences. I love Motion Graphics, so on my spare time, you will find me experimenting how to bring motion to web applications. I'm currently learning TypeScript and SQL Database.  
     <br />
     <a href="https://github.com/dlongodev/my-portfolio"><strong>Explore the docs »</strong></a>
     <br />
