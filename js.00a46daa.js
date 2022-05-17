@@ -142,7 +142,6 @@ hamburgerBtn.addEventListener('click', function () {
 
 document.onclick = function (e) {
   if (e.target.id !== 'hamBtn' && e.target.id !== 'menuToggle') {
-    console.log(toggleMenu);
     toggleMenu.classList.add('menu-active');
     hamburgerBtn.classList.remove('active');
   }
@@ -156,7 +155,6 @@ var allMarqueeContent = document.querySelectorAll("ul.marquee-content");
 
 var marqueeContent = function marqueeContent() {
   allMarqueeContent.forEach(function (marquee) {
-    console.log(marquee);
     root.style.setProperty("--marquee-elements", marquee.children.length);
 
     for (var i = 0; i < marqueeElementsDisplayed; i++) {
@@ -257,7 +255,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63884" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55255" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
