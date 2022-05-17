@@ -471,7 +471,6 @@ nav li:hover {
 }
 
 .menu-active {
-  visibility: hidden;
   transform: translateX(105%);
   -webkit-transition: transform 0.5s;
   -moz-transition: transform 0.5s;

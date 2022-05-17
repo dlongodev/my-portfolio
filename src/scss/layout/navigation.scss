@@ -119,8 +119,8 @@ nav {
   z-index: 98;
 }
 .menu-active {
-  visibility: hidden;
   transform: translateX(105%);
+  // visibility: hidden; 
   -webkit-transition: transform 0.5s;
   -moz-transition: transform 0.5s;
   -ms-transition: transform 0.5s;

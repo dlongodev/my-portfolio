@@ -26,7 +26,6 @@ hamburgerBtn.addEventListener('click', () => {
 
 document.onclick = (e) => {
     if (e.target.id !== 'hamBtn' && e.target.id !== 'menuToggle') {
-        console.log(toggleMenu)
         toggleMenu.classList.add('menu-active')
         hamburgerBtn.classList.remove('active')
     }
@@ -41,7 +40,6 @@ const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marq
 const allMarqueeContent = document.querySelectorAll("ul.marquee-content");
 const marqueeContent = () => {
     allMarqueeContent.forEach(marquee => {
-        console.log(marquee)
         root.style.setProperty("--marquee-elements", marquee.children.length);
         for (let i = 0; i < marqueeElementsDisplayed; i++) {
             marquee.appendChild(marquee.children[i].cloneNode(true));
