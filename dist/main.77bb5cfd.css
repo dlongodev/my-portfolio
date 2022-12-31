@@ -1,47 +1,69 @@
 html {
-  /* peri */
-  --brand-peri: var(--brand-main);
-  --text1-peri: var(--brand-900);
-  --text2-peri: var(--brand-main);
-  --text3-peri: var(--brand-600);
-  --text4-peri: var(--brand-100);
-  --text5-peri: var(--brand-100);
-  --surface1-peri: var(--brand-100);
-  --surface2-peri: var(--brand-200);
-  --surface3-peri: var(--brand-300);
-  --surface4-peri: var(--brand-500);
+  /* 2022 */
+  --very-peri: var(--very-peri-main);
+  --text1-peri: var(--very-peri-900);
+  --text2-peri: var(--very-peri-main);
+  --text3-peri: var(--very-peri-600);
+  --text4-peri: var(--very-peri-100);
+  --text5-peri: var(--very-peri-100);
+  --surface1-peri: var(--very-peri-100);
+  --surface2-peri: var(--very-peri-200);
+  --surface3-peri: var(--very-peri-300);
+  --surface4-peri: var(--very-peri-500);
   --surface-shadow-peri: 239 30% 20%;
   --shadow-strength-peri: 2%;
   --logo-opacity: 0.3;
+  /* 2023 */
+  --viva-magenta: var(--viva-magenta-main);
+  --text1-viva-magenta: var(--viva-magenta-900);
+  --text2-viva-magenta: var(--viva-magenta-main);
+  --text3-viva-magenta: var(--viva-magenta-600);
+  --text4-viva-magenta: var(--viva-magenta-100);
+  --text5-viva-magenta: var(--viva-magenta-100);
+  --surface1-viva-magenta: var(--viva-magenta-100);
+  --surface2-viva-magenta: var(--viva-magenta-200);
+  --surface3-viva-magenta: var(--viva-magenta-300);
+  --surface4-viva-magenta: var(--viva-magenta-500);
+  --surface-shadow-viva-magenta: 346 30% 20%;
+  --shadow-strength-viva-magenta: 2%;
+  --logo-opacity: 0.3;
   /* dark */
-  --brand-dark: var(--brand-300);
+  --dark-main: var(--stone-5);
   --text1-dark: var(--gray-1);
   --text2-dark: var(--gray-3);
   --text3-dark: var(--gray-2);
   --text4-dark: var(--gray-9);
   --text5-dark: var(--gray-0);
   --surface1-dark: var(--gray-9);
-  --surface2-dark: var(--brand-900);
-  --surface3-dark: var(--gray-7);
+  --surface2-dark: var(--gray-9);
+  --surface3-dark: var(--gray-6);
   --surface4-dark: var(--gray-5);
-  --surface5-dark: var(--brand-600);
+  --surface5-dark: var(--gray-8);
   --surface-shadow-dark: 200 50% 3%;
   --shadow-strength-dark: 80%;
   --logo-opacity: 0.1;
 }
 
 :root {
-  --brand-main: hsl(239, 29%, 54%);
-  --brand-100: hsl(239, 26%, 93%);
-  --brand-200: hsl(239, 60%, 92%);
-  --brand-300: hsl(239, 39%, 83%);
-  --brand-400: hsl(239, 33%, 73%);
-  --brand-500: hsl(239, 31%, 63%);
-  --brand-600: hsl(238, 34%, 38%);
-  --brand-900: hsl(239, 40%, 20%);
+  --very-peri-main: hsl(239, 29%, 54%);
+  --very-peri-100: hsl(239, 26%, 93%);
+  --very-peri-200: hsl(239, 60%, 92%);
+  --very-peri-300: hsl(239, 39%, 83%);
+  --very-peri-400: hsl(239, 33%, 73%);
+  --very-peri-500: hsl(239, 31%, 63%);
+  --very-peri-600: hsl(238, 34%, 38%);
+  --very-peri-900: hsl(239, 40%, 20%);
+  --viva-magenta-main: hsl(346, 66%, 44%);
+  --viva-magenta-100: hsl(346, 100%, 97%);
+  --viva-magenta-200: hsl(346, 85%, 94%);
+  --viva-magenta-300: hsl(346, 51%, 79%);
+  --viva-magenta-400: hsl(346, 52%, 66%);
+  --viva-magenta-500: hsl(346, 52%, 55%);
+  --viva-magenta-600: hsl(346, 70%, 21%);
+  --viva-magenta-900: hsl(345, 50%, 2%);
   color-scheme: light;
   /* set defaults */
-  --brand: var(--brand-peri);
+  --brand: var(--very-peri);
   --text1: var(--text1-peri);
   --text2: var(--text2-peri);
   --text3: var(--text3-peri);
@@ -51,14 +73,16 @@ html {
   --surface2: var(--surface2-peri);
   --surface3: var(--surface3-peri);
   --surface4: var(--surface4-peri);
-  --surface5: var(--brand-peri);
+  --surface5: var(--very-peri);
   --surface-shadow: var(--surface-shadow-peri);
   --shadow-strength: var(--shadow-strength-peri);
   --logo-opacity: 0.3;
   --marquee-width: 100vw;
   --marquee-height: 10vh;
   --marquee-elements-displayed: 12;
-  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+  --marquee-element-width: calc(
+    var(--marquee-width) / var(--marquee-elements-displayed)
+  );
   --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
 }
 @media screen and (max-width: 2000px) {
@@ -73,13 +97,13 @@ html {
 }
 @media screen and (max-width: 600px) {
   :root {
-    --marquee-elements-displayed: 4 ;
+    --marquee-elements-displayed: 4;
   }
 }
 
 [color-scheme=dark] {
   color-scheme: dark;
-  --brand: var(--brand-dark);
+  --brand: var(--dark-main);
   --text1: var(--text1-dark);
   --text2: var(--text2-dark);
   --text3: var(--text3-dark);
@@ -97,17 +121,37 @@ html {
 
 [color-scheme=very-pery] {
   color-scheme: light;
-  --brand: var(--brand-peri);
+  --brand: var(--very-peri);
   --text1: var(--text1-peri);
   --text2: var(--text2-peri);
   --text3: var(--text3-peri);
   --text4: var(--text4-peri);
+  --text5: var(--text5-peri);
   --surface1: var(--surface1-peri);
   --surface2: var(--surface2-peri);
   --surface3: var(--surface3-peri);
   --surface4: var(--surface4-peri);
+  --surface5: var(--very-peri);
   --surface-shadow: var(--surface-shadow-peri);
   --shadow-strength: var(--shadow-strength-peri);
+  --logo-opacity: 0.3;
+}
+
+[color-scheme=viva-magenta] {
+  color-scheme: light;
+  --brand: var(--viva-magenta);
+  --text1: var(--text1-viva-magenta);
+  --text2: var(--text2-viva-magenta);
+  --text3: var(--text3-viva-magenta);
+  --text4: var(--text4-viva-magenta);
+  --text5: var(--text5-viva-magenta);
+  --surface1: var(--surface1-viva-magenta);
+  --surface2: var(--surface2-viva-magenta);
+  --surface3: var(--surface3-viva-magenta);
+  --surface4: var(--surface4-viva-magenta);
+  --surface5: var(--viva-magenta);
+  --surface-shadow: var(--surface-shadow-viva-magenta);
+  --shadow-strength: var(--shadow-strength-viva-magenta);
   --logo-opacity: 0.3;
 }
 
@@ -298,7 +342,7 @@ header {
   position: absolute;
   z-index: -1;
   opacity: var(--logo-opacity);
-  width: clamp(15em, 40vw, 30rem);
+  width: clamp(65em, 80vw, 100rem);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -346,6 +390,16 @@ header {
 .bottom-left i {
   color: var(--text4);
   padding: 1rem;
+}
+
+.bottom-center {
+  display: flex;
+}
+.bottom-center .radio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
 }
 
 nav {
@@ -503,7 +557,7 @@ nav li:hover {
   padding: var(--size-5);
   margin-top: var(--size-5);
 }
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 750px) {
   .about {
     flex-direction: row;
   }
@@ -521,6 +575,7 @@ nav li:hover {
 
 .photo {
   padding: var(--size-1);
+  background-color: var(--surface5);
 }
 .photo img {
   inline-size: var(--size-5);
@@ -550,7 +605,7 @@ nav li:hover {
 .about-text .btn-container {
   text-align: center;
 }
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 750px) {
   .about-text {
     margin-left: var(--size-7);
   }
@@ -641,7 +696,8 @@ nav li:hover {
   overflow: hidden;
   width: 100%;
 }
-.section-title h2, .section-title h4,
+.section-title h2,
+.section-title h4,
 .section-title span {
   color: var(--text5);
   margin: 0 var(--size-3);
@@ -718,6 +774,7 @@ nav li:hover {
   position: relative;
   overflow: hidden;
   width: 100%;
+  height: 100%;
   background-color: var(--surface2);
 }
 .project-img img {
@@ -810,7 +867,7 @@ nav li:hover {
 .marquee {
   width: var(--marquee-width);
   height: var(--marquee-height);
-  color: var(--brand-400);
+  color: var(--surface3);
   overflow: hidden;
   position: relative;
 }
@@ -850,11 +907,11 @@ nav li:hover {
   }
 }
 .marquee-content li:nth-child(6) {
-  color: var(--brand-100);
+  color: var(--surface1);
 }
 @media (max-width: 600px) {
   .marquee-content li:nth-child(4) {
-    color: var(--brand-100);
+    color: var(--surface1);
   }
 }
 

@@ -119,13 +119,10 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"js/index.js":[function(require,module,exports) {
 // switch theme
-// const switcher = document.querySelector('#theme-switcher')
-var switchBtn = document.querySelector('#switch');
-var dark = "dark";
-var light = "very-peri";
+var switcher = document.querySelector('#theme-switcher');
 var doc = document.firstElementChild;
-switchBtn.addEventListener('change', function () {
-  return switchBtn.checked ? setTheme(dark) : setTheme(light);
+switcher.addEventListener('input', function (e) {
+  return setTheme(e.target.value);
 });
 
 var setTheme = function setTheme(theme) {
@@ -255,7 +252,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55255" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49905" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,8 +1,8 @@
-@use 'abstracts/' as a;
-$paragraph-xs: clamp(.675rem,1.5vw,0.875rem);
-$h2-title: clamp(1.5rem,4.5vw,3.5rem);
+@use "abstracts/" as a;
+$paragraph-xs: clamp(0.675rem, 1.5vw, 0.875rem);
+$h2-title: clamp(1.5rem, 4.5vw, 3.5rem);
 
-.btn-group>a {
+.btn-group > a {
   margin-top: 0.5rem;
 }
 .work-container {
@@ -16,8 +16,9 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
   height: min(8rem, 6.5rem);
   overflow: hidden;
   width: 100%;
-  
-  h2, h4,
+
+  h2,
+  h4,
   span {
     color: var(--text5);
     margin: 0 var(--size-3);
@@ -26,78 +27,77 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
     animation: blink;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    }
-    
-    .blink1 {
-      animation-duration: 2s;
-    }
-    
-    .blink2 {
-      animation-duration: 3s;
-    }
-    }
-    
-    @keyframes blink {
-      0% {
-        opacity: 0.1;
-      }
-    
-      100% {
-        opacity: 0.7;
-      }
+  }
+
+  .blink1 {
+    animation-duration: 2s;
+  }
+
+  .blink2 {
+    animation-duration: 3s;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0.7;
+  }
 }
 .next {
-    height: min(5rem, 3.5rem);
-  }
+  height: min(5rem, 3.5rem);
+}
 
 .project {
   max-width: 90rem;
   display: flex;
   @include a.flex(column, center, center);
 
-    .right {
-      order: 1
-  };
-  @media screen and (min-width: 750px) {
-      padding: 0 1rem;
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      align-items: flex-end;
-      gap: 1rem;
-
-       .right{
-          grid-column: span 3;
-          order: 0;
-      }
-      .left{
-          grid-column: span 3;
-      }
-   }
-  @media screen and (min-width: 1000px) {
-      padding: 0 1rem;
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      align-items: flex-end;
-      gap: 3rem;    
-
-      .right{
-          grid-column: span 4;
-          order: 0;
-      }
-      .left{
-          grid-column: span 2;
-      }
+  .right {
+    order: 1;
   }
-   
+  @media screen and (min-width: 750px) {
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: flex-end;
+    gap: 1rem;
+
+    .right {
+      grid-column: span 3;
+      order: 0;
+    }
+    .left {
+      grid-column: span 3;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: flex-end;
+    gap: 3rem;
+
+    .right {
+      grid-column: span 4;
+      order: 0;
+    }
+    .left {
+      grid-column: span 2;
+    }
+  }
 }
 
 .project-img {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    background-color: var(--surface2);
-    
-    
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: var(--surface2);
+
   img {
     width: 100%;
   }
@@ -114,7 +114,7 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
     position: absolute;
     top: 0;
     right: -150px;
-    }
+  }
   .img-4 {
     position: relative;
     z-index: 3;
@@ -136,15 +136,15 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
     z-index: 3;
     opacity: 0;
     transition: opacity 1s ease-in;
-    &:hover{
-        opacity: 1;
+    &:hover {
+      opacity: 1;
     }
   }
   .img-8 {
     position: relative;
     z-index: 3;
   }
-  
+
   .img-9 {
     position: absolute;
     top: 0;
@@ -152,7 +152,7 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
     z-index: 4;
     opacity: 0;
     transition: opacity 1s ease-in;
-  
+
     &:hover {
       opacity: 1;
     }
@@ -160,18 +160,18 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
 }
 
 .project-description {
-    // width: 85%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    line-height: var(--font-lineheight-4);
-    padding: 0 1.5rem;
+  // width: 85%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: var(--font-lineheight-4);
+  padding: 0 1.5rem;
 
-    @media screen and (min-width: 750px) {
+  @media screen and (min-width: 750px) {
     padding: 0 1rem;
-        h2 {
-            font-size: $h2-title;
-        }
+    h2 {
+      font-size: $h2-title;
     }
+  }
 
   p {
     text-align: justify;
@@ -179,16 +179,15 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
     color: var(--text1);
   }
   span {
-      display: block;
-      margin: 1rem 0;
-      font-size: $paragraph-xs;
-      color: var(--brand);
-      text-transform: uppercase;
-      font-weight: 700;
-      letter-spacing: 0.075em;
+    display: block;
+    margin: 1rem 0;
+    font-size: $paragraph-xs;
+    color: var(--brand);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.075em;
   }
 }
-
 
 // MARQUEE
 
@@ -196,7 +195,7 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
   width: var(--marquee-width);
   height: var(--marquee-height);
   // background-color: var(--brand-main);
-  color: var(--brand-400);
+  color: var(--surface3);
   overflow: hidden;
   position: relative;
 }
@@ -245,13 +244,13 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
     flex-shrink: 0;
     width: var(--marquee-element-width);
     max-height: 100%;
-    font-size: calc(var(--marquee-height)*1/4);
+    font-size: calc(var(--marquee-height) * 1 / 4);
     white-space: nowrap;
     text-transform: uppercase;
     font-weight: 600;
 
     @media (max-width: 900px) {
-      font-size: calc(var(--marquee-height)*1/5);
+      font-size: calc(var(--marquee-height) * 1 / 5);
     }
   }
 
@@ -261,17 +260,19 @@ $h2-title: clamp(1.5rem,4.5vw,3.5rem);
     }
 
     100% {
-      transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+      transform: translateX(
+        calc(-1 * var(--marquee-element-width) * var(--marquee-elements))
+      );
     }
   }
 
   li:nth-child(6) {
-    color: var(--brand-100);
+    color: var(--surface1);
   }
 
   @media (max-width: 600px) {
     li:nth-child(4) {
-      color: var(--brand-100);
+      color: var(--surface1);
     }
   }
 }
