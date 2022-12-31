@@ -5,22 +5,21 @@
   width: 100%;
   padding: var(--size-5);
   margin-top: var(--size-5);
-  
-  @media screen and (min-width: 650px) {
-      flex-direction: row;
-}
-@media screen and (min-width: 950px) {
+
+  @media screen and (min-width: 750px) {
+    flex-direction: row;
+  }
+  @media screen and (min-width: 950px) {
     width: 80%;
-}
-@media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1200px) {
     width: 60%;
+  }
 }
-
-}
-
 
 .photo {
-    padding: var(--size-1);
+  padding: var(--size-1);
+  background-color: var(--surface5);
 
   img {
     inline-size: var(--size-5);
@@ -32,34 +31,34 @@
 }
 
 .about-text {
-    padding: var(--size-5);
-    width: 100%;
+  padding: var(--size-5);
+  width: 100%;
 
   h2 {
-      color: var(--text5);
-      text-align: center;
-      margin-bottom: var(--size-4);
-  }
-    p {
-        color: var(--text5);
-        margin: 0;
-        width: 100%;
-        font-size: clamp(1rem, 1.5vw, 1.1rem);
-        text-align: justify;
-        line-height: var(--font-lineheight-4);
-    }
-.btn-container{
+    color: var(--text5);
     text-align: center;
-}
+    margin-bottom: var(--size-4);
+  }
+  p {
+    color: var(--text5);
+    margin: 0;
+    width: 100%;
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
+    text-align: justify;
+    line-height: var(--font-lineheight-4);
+  }
+  .btn-container {
+    text-align: center;
+  }
 
-@media screen and (min-width: 650px) {
+  @media screen and (min-width: 750px) {
     margin-left: var(--size-7);
 
-    h2{
-        text-align: left;
+    h2 {
+      text-align: left;
     }
     .btn-container {
-        text-align: left;
+      text-align: left;
     }
-}
+  }
 }

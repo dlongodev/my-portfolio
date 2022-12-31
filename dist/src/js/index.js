@@ -1,18 +1,12 @@
 // switch theme
-// const switcher = document.querySelector('#theme-switcher')
-const switchBtn = document.querySelector('#switch')
-let dark = "dark"
-let light = "vey-peri"
+const switcher = document.querySelector('#theme-switcher')
 const doc = document.firstElementChild
 
-switchBtn.addEventListener('change', () =>
-    switchBtn.checked
-        ? setTheme(dark)
-        : setTheme(light)
-)
+switcher.addEventListener('input', e =>
+  setTheme(e.target.value))
 
 const setTheme = theme =>
-    doc.setAttribute('color-scheme', theme)
+  doc.setAttribute('color-scheme', theme)
 
 
 // hamburger menu
