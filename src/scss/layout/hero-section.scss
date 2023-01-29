@@ -38,6 +38,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .bottom-right {
@@ -74,15 +75,87 @@ header {
     color: var(--text4);
     padding: 1rem;
   }
+  @media screen and (max-width: 650px) {
+    display: none;
+  }
 }
 
-.bottom-center {
+/* radio */
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 100px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
-  .radio-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 1rem;
+  .bottom-center {
+    border: none;
+    width: 100%;
+    text-align: center;
+
+    // .radio-container {
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    //   margin: 0 1rem;
+    // }
+  }
+  input[type="radio"] {
+    display: none;
+    + label {
+      position: relative;
+      color: var(--text1);
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      user-select: none;
+      padding-left: 20px;
+      padding-right: 20px;
+      &::before {
+        transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
+        content: "";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: var(--brand);
+        border: 0px solid var(--brand);
+        font-size: 0;
+        position: absolute;
+        bottom: 250%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+
+      &::after {
+        transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
+        content: "";
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background-color: var(--brand);
+        position: absolute;
+        bottom: 250%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+    }
+    &:checked + label {
+      &::before {
+        background-color: transparent;
+        width: 40px;
+        height: 40px;
+        border-width: 2px;
+      }
+
+      &::after {
+        width: 30px;
+        height: 30px;
+      }
+    }
   }
 }
