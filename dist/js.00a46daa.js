@@ -122,7 +122,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var switcher = document.querySelector('#theme-switcher');
 var doc = document.firstElementChild;
 switcher.addEventListener('input', function (e) {
-  return setTheme(e.target.value);
+  setTheme(e.target.value);
 });
 
 var setTheme = function setTheme(theme) {
@@ -252,7 +252,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49905" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50621" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

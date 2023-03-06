@@ -47,6 +47,8 @@ html {
 }
 
 :root {
+  color-scheme: light;
+
   --very-peri-main: hsl(239, 29%, 54%);
   --very-peri-100: hsl(239, 26%, 93%);
   --very-peri-200: hsl(239, 60%, 92%);
@@ -66,7 +68,6 @@ html {
   --viva-magenta-500: hsl(346, 52%, 55%);
   --viva-magenta-600: hsl(346, 70%, 21%);
   --viva-magenta-900: hsl(345, 50%, 2%);
-  color-scheme: light;
 
   /* set defaults */
   --brand: var(--very-peri);
@@ -143,6 +144,24 @@ html {
   --logo-opacity: 0.1;
 }
 
+[color-scheme="viva-magenta"] {
+  color-scheme: light;
+  --brand: var(--viva-magenta);
+  --text1: var(--text1-viva-magenta);
+  --text2: var(--text2-viva-magenta);
+  --text3: var(--text3-viva-magenta);
+  --text4: var(--text4-viva-magenta);
+  --text5: var(--text5-viva-magenta);
+  --surface1: var(--surface1-viva-magenta);
+  --surface2: var(--surface2-viva-magenta);
+  --surface3: var(--surface3-viva-magenta);
+  --surface4: var(--surface4-viva-magenta);
+  --surface5: var(--viva-magenta);
+  --surface-shadow: var(--surface-shadow-viva-magenta);
+  --shadow-strength: var(--shadow-strength-viva-magenta);
+  --logo-opacity: 0.3;
+}
+
 [color-scheme="very-pery"] {
   color-scheme: light;
 
@@ -159,24 +178,6 @@ html {
   --surface5: var(--very-peri);
   --surface-shadow: var(--surface-shadow-peri);
   --shadow-strength: var(--shadow-strength-peri);
-  --logo-opacity: 0.3;
-}
-
-[color-scheme="viva-magenta"] {
-  color-scheme: light;
-  --brand: var(--viva-magenta);
-  --text1: var(--text1-viva-magenta);
-  --text2: var(--text2-viva-magenta);
-  --text3: var(--text3-viva-magenta);
-  --text4: var(--text4-viva-magenta);
-  --text5: var(--text5-viva-magenta);
-  --surface1: var(--surface1-viva-magenta);
-  --surface2: var(--surface2-viva-magenta);
-  --surface3: var(--surface3-viva-magenta);
-  --surface4: var(--surface4-viva-magenta);
-  --surface5: var(--viva-magenta);
-  --surface-shadow: var(--surface-shadow-viva-magenta);
-  --shadow-strength: var(--shadow-strength-viva-magenta);
   --logo-opacity: 0.3;
 }
 
