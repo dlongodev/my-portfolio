@@ -4,7 +4,7 @@ $hero-logo: clamp(15em, 40vw, 30rem);
 header {
   z-index: 0;
   position: relative;
-  min-height: 100vh - 3.5rem;
+  min-height: calc(100vh - 3.5rem);
   @include a.flex(column, space-between, center);
   text-align: center;
   margin: 0 auto;

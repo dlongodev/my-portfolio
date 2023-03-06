@@ -81,13 +81,20 @@ header {
 }
 
 /* radio */
+.theme-title {
+  position: absolute;
+  top: -40px;
+  color: var(--text1);
+      font-weight: bold;
+      font-size: 1rem;
+}
 form {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
-  height: 100px;
+  min-width: 25rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,6 +104,8 @@ form {
     border: none;
     width: 100%;
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
     // .radio-container {
     //   display: flex;
@@ -111,7 +120,7 @@ form {
       position: relative;
       color: var(--text1);
       font-weight: bold;
-      font-size: 1rem;
+      font-size: 0.8rem;
       cursor: pointer;
       user-select: none;
       padding-left: 20px;

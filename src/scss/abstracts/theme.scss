@@ -70,20 +70,21 @@ html {
   --viva-magenta-900: hsl(345, 50%, 2%);
 
   /* set defaults */
-  --brand: var(--very-peri);
-  --text1: var(--text1-peri);
-  --text2: var(--text2-peri);
-  --text3: var(--text3-peri);
-  --text4: var(--text4-peri);
-  --text5: var(--text5-peri);
-  --surface1: var(--surface1-peri);
-  --surface2: var(--surface2-peri);
-  --surface3: var(--surface3-peri);
-  --surface4: var(--surface4-peri);
-  --surface5: var(--very-peri);
-  --surface-shadow: var(--surface-shadow-peri);
-  --shadow-strength: var(--shadow-strength-peri);
+  --brand: var(--viva-magenta);
+  --text1: var(--text1-viva-magenta);
+  --text2: var(--text2-viva-magenta);
+  --text3: var(--text3-viva-magenta);
+  --text4: var(--text4-viva-magenta);
+  --text5: var(--text5-viva-magenta);
+  --surface1: var(--surface1-viva-magenta);
+  --surface2: var(--surface2-viva-magenta);
+  --surface3: var(--surface3-viva-magenta);
+  --surface4: var(--surface4-viva-magenta);
+  --surface5: var(--viva-magenta);
+  --surface-shadow: var(--surface-shadow-viva-magenta);
+  --shadow-strength: var(--shadow-strength-viva-magenta);
   --logo-opacity: 0.3;
+  
   //marquee variables
   --marquee-width: 100vw;
   --marquee-height: 10vh;
@@ -144,25 +145,7 @@ html {
   --logo-opacity: 0.1;
 }
 
-[color-scheme="viva-magenta"] {
-  color-scheme: light;
-  --brand: var(--viva-magenta);
-  --text1: var(--text1-viva-magenta);
-  --text2: var(--text2-viva-magenta);
-  --text3: var(--text3-viva-magenta);
-  --text4: var(--text4-viva-magenta);
-  --text5: var(--text5-viva-magenta);
-  --surface1: var(--surface1-viva-magenta);
-  --surface2: var(--surface2-viva-magenta);
-  --surface3: var(--surface3-viva-magenta);
-  --surface4: var(--surface4-viva-magenta);
-  --surface5: var(--viva-magenta);
-  --surface-shadow: var(--surface-shadow-viva-magenta);
-  --shadow-strength: var(--shadow-strength-viva-magenta);
-  --logo-opacity: 0.3;
-}
-
-[color-scheme="very-pery"] {
+[color-scheme="very-peri"] {
   color-scheme: light;
 
   --brand: var(--very-peri);
@@ -178,6 +161,24 @@ html {
   --surface5: var(--very-peri);
   --surface-shadow: var(--surface-shadow-peri);
   --shadow-strength: var(--shadow-strength-peri);
+  --logo-opacity: 0.3;
+}
+
+[color-scheme="viva-magenta"] {
+  color-scheme: light;
+  --brand: var(--viva-magenta);
+  --text1: var(--text1-viva-magenta);
+  --text2: var(--text2-viva-magenta);
+  --text3: var(--text3-viva-magenta);
+  --text4: var(--text4-viva-magenta);
+  --text5: var(--text5-viva-magenta);
+  --surface1: var(--surface1-viva-magenta);
+  --surface2: var(--surface2-viva-magenta);
+  --surface3: var(--surface3-viva-magenta);
+  --surface4: var(--surface4-viva-magenta);
+  --surface5: var(--viva-magenta);
+  --surface-shadow: var(--surface-shadow-viva-magenta);
+  --shadow-strength: var(--shadow-strength-viva-magenta);
   --logo-opacity: 0.3;
 }
 

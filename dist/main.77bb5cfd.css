@@ -63,19 +63,19 @@ html {
   --viva-magenta-600: hsl(346, 70%, 21%);
   --viva-magenta-900: hsl(345, 50%, 2%);
   /* set defaults */
-  --brand: var(--very-peri);
-  --text1: var(--text1-peri);
-  --text2: var(--text2-peri);
-  --text3: var(--text3-peri);
-  --text4: var(--text4-peri);
-  --text5: var(--text5-peri);
-  --surface1: var(--surface1-peri);
-  --surface2: var(--surface2-peri);
-  --surface3: var(--surface3-peri);
-  --surface4: var(--surface4-peri);
-  --surface5: var(--very-peri);
-  --surface-shadow: var(--surface-shadow-peri);
-  --shadow-strength: var(--shadow-strength-peri);
+  --brand: var(--viva-magenta);
+  --text1: var(--text1-viva-magenta);
+  --text2: var(--text2-viva-magenta);
+  --text3: var(--text3-viva-magenta);
+  --text4: var(--text4-viva-magenta);
+  --text5: var(--text5-viva-magenta);
+  --surface1: var(--surface1-viva-magenta);
+  --surface2: var(--surface2-viva-magenta);
+  --surface3: var(--surface3-viva-magenta);
+  --surface4: var(--surface4-viva-magenta);
+  --surface5: var(--viva-magenta);
+  --surface-shadow: var(--surface-shadow-viva-magenta);
+  --shadow-strength: var(--shadow-strength-viva-magenta);
   --logo-opacity: 0.3;
   --marquee-width: 100vw;
   --marquee-height: 10vh;
@@ -119,6 +119,24 @@ html {
   --logo-opacity: 0.1;
 }
 
+[color-scheme=very-peri] {
+  color-scheme: light;
+  --brand: var(--very-peri);
+  --text1: var(--text1-peri);
+  --text2: var(--text2-peri);
+  --text3: var(--text3-peri);
+  --text4: var(--text4-peri);
+  --text5: var(--text5-peri);
+  --surface1: var(--surface1-peri);
+  --surface2: var(--surface2-peri);
+  --surface3: var(--surface3-peri);
+  --surface4: var(--surface4-peri);
+  --surface5: var(--very-peri);
+  --surface-shadow: var(--surface-shadow-peri);
+  --shadow-strength: var(--shadow-strength-peri);
+  --logo-opacity: 0.3;
+}
+
 [color-scheme=viva-magenta] {
   color-scheme: light;
   --brand: var(--viva-magenta);
@@ -134,24 +152,6 @@ html {
   --surface5: var(--viva-magenta);
   --surface-shadow: var(--surface-shadow-viva-magenta);
   --shadow-strength: var(--shadow-strength-viva-magenta);
-  --logo-opacity: 0.3;
-}
-
-[color-scheme=very-pery] {
-  color-scheme: light;
-  --brand: var(--very-peri);
-  --text1: var(--text1-peri);
-  --text2: var(--text2-peri);
-  --text3: var(--text3-peri);
-  --text4: var(--text4-peri);
-  --text5: var(--text5-peri);
-  --surface1: var(--surface1-peri);
-  --surface2: var(--surface2-peri);
-  --surface3: var(--surface3-peri);
-  --surface4: var(--surface4-peri);
-  --surface5: var(--very-peri);
-  --surface-shadow: var(--surface-shadow-peri);
-  --shadow-strength: var(--shadow-strength-peri);
   --logo-opacity: 0.3;
 }
 
@@ -399,13 +399,21 @@ header {
 }
 
 /* radio */
+.theme-title {
+  position: absolute;
+  top: -40px;
+  color: var(--text1);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
 form {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
-  height: 100px;
+  min-width: 25rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -415,6 +423,8 @@ form .bottom-center {
   border: none;
   width: 100%;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 form input[type=radio] {
   display: none;
@@ -423,7 +433,7 @@ form input[type=radio] + label {
   position: relative;
   color: var(--text1);
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.8rem;
   cursor: pointer;
   user-select: none;
   padding-left: 20px;
