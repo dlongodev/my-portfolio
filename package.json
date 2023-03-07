@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/dlongodev/my-portfolio/issues"
   },
-  "homepage": "https://dlongodev.github.io/my-portfolio",
+  "homepage": "https://github.com/dlongodev/my-portfolio.git",
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
     "sass": "^1.49.9"
